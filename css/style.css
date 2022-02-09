@@ -52,7 +52,7 @@ p {
 }
 .header__photo {
   height: 7rem;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .header__photo:hover {
   transform: scale(1.05);
@@ -64,7 +64,7 @@ p {
   transition: text-shadow 0.2s linear;
 }
 .header__link:hover {
-  text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
+  text-shadow: 0 0 0.5px #333, 0 0 0.5px #333, 0 0 0.5px #333;
 }
 .header__nav {
   display: flex;
@@ -82,7 +82,7 @@ p {
   background-color: #fff;
   height: 100vh;
   transform: translateX(100%);
-  transition: transform .5s linear;
+  transition: transform 0.5s linear;
   overflow: auto;
 }
 .nav-burger.active {
@@ -124,7 +124,7 @@ p {
   font-size: 0;
   position: relative;
   background-color: #333;
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 }
 .nav-toggle__item::before,
 .nav-toggle__item:after {
@@ -136,7 +136,7 @@ p {
   top: -12px;
   right: 0px;
   z-index: 1;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .nav-toggle__item::before {
   top: 12px;
@@ -215,7 +215,7 @@ p {
   font-size: 1.6rem;
   color: #1C242C;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .about__btn:hover,
 .about__btn.active {
@@ -270,7 +270,7 @@ p {
   margin-right: 5px;
   border-radius: 50%;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
   height: 42px;
 }
 .chair_color:hover {
@@ -306,6 +306,93 @@ p {
 #img_5:checked ~ div #fifth {
   visibility: visible;
   opacity: 1;
+}
+.contacts {
+  margin-top: 40px;
+}
+.contacts h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contacts hr {
+  width: 98%;
+  height: 3px;
+  background: #F1F5F8;
+  outline: none;
+  border: none;
+}
+.contacts-info {
+  margin-bottom: 40px;
+}
+.contacts-info__text h4 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 15px 0 10px 0;
+}
+.contacts-info__text p {
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.contacts-info__img {
+  min-height: 200px;
+  background: url(../../images/contacts.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contacts-address {
+  align-items: center;
+}
+.contacts-address h3 {
+  text-align: center;
+}
+.contacts-address__text {
+  margin: 10px 0 20px 0;
+}
+.contacts-address__text p {
+  font-size: 1.3rem;
+}
+.contacts-address__text p b {
+  margin-right: 7px;
+}
+.contacts-address__map {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  .contacts-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .contacts-info__img {
+    min-height: 300px;
+    width: 50%;
+    background: url(../../images/contacts.jpg);
+    background-position: 70%;
+    background-size: cover;
+  }
+  .contacts-address {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-auto-rows: content;
+  }
+  .contacts-address h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contacts-address__text {
+    grid-column-start: 1;
+  }
+  .contacts-address__map {
+    grid-column-start: 2;
+    height: 350px;
+    width: 100%;
+  }
 }
 /* HELPERS */
 .pos-rel {
@@ -412,7 +499,7 @@ p {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .slick-arrow:hover {
   transform: scale(1.05);
@@ -431,11 +518,11 @@ p {
   background: none;
   border-radius: 50%;
   font-size: 1.1rem;
-  padding: .8rem 1.1rem;
+  padding: 0.8rem 1.1rem;
   color: #fff;
   cursor: pointer;
   border-color: #fff;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .slick-dots button:hover {
   transform: scale(1.05);
