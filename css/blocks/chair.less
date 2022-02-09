@@ -1,0 +1,55 @@
+// main: ../style.less
+
+.chair_slider {
+    position: relative;
+    width: 100%;
+}
+
+.chair_radio {
+    display: none;
+}
+
+.chair_item {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.chair_button {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+
+    &--second {
+        top: 12rem;
+    }
+
+    &--third {
+        top: 19rem;
+    }
+    
+    &--fourth {
+        top: 26rem;
+    }
+    
+    &--fifth {
+        top: 33rem;
+    }
+}
+
+.chair_color {
+    display: block;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    height: 42px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}

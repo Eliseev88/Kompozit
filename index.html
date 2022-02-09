@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d73d6a795.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container pos-rel">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="header__link" href="/"><img class="header__photo" src="images/kp-black.jpg" alt="logo"></a>
+                </div>
+                <nav class="header__nav" id="nav">
+                    <div class="header__nav-el"><a class="header__link" href="">Описание</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="">Цена</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="">Вопрос-ответ</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="">Акции</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="">Доставка</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="">Контакты</a></div>
+                </nav>
+
+                <button class="nav-toggle" type="button" id="nav-toggle">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+
+
+                <!-- NAV-BURGER -->
+                <div class="nav-burger" id="nav-burger">
+                    <menu class="nav-burger__menu">
+                        <nav class="nav-burger__nav">
+                            <ul>
+                                <li><a href="#" class="nav-burger__link">Главная</a></li>
+                                <li><a href="#" class="nav-burger__link">Описание</a></li>
+                                <li><a href="#" class="nav-burger__link">Цена</a></li>
+                                <li><a href="#" class="nav-burger__link">Вопрос-ответ</a></li>
+                                <li><a href="#" class="nav-burger__link">Акции</a></li>
+                                <li><a href="#" class="nav-burger__link">Доставка</a></li>
+                                <li><a href="#" class="nav-burger__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </menu>
+                </div>
+            </div> <!-- header__inner -->
+        </div> <!-- /.container -->
+    </header>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="slider">
+            <div><img src="images/roof-plate-tiles-brick-black-48882%201.png" alt="photo"></div>
+            <div><img src="images/pexels-photo-4707700%201.png" alt="photo"></div>
+            <div><img src="images/slider1.jpg" alt="photo"></div>
+            <div><img src="images/slider2.jpg" alt="photo"></div>
+        </div> <!-- /.slider -->
+        <div class="container pos-rel">
+            <div class="slider__inner">
+                <div class="slick__arrows"></div>
+                <div class="slick__dots"></div>
+            </div>
+        </div>
+        <div class="intro__inner">
+            <h1 class="intro__title">Композитпласт</h1>
+            <div class="intro__text">
+                <p>Лист кровельный полимерный - современный кровельный материал, технологические и эксплуатационные характеристики которого в несколько раз превосходят параметры привычных нам материалов.</p>
+            </div>
+            <button class="intro__btn" type="button">Заказать</button>
+        </div> <!-- /intro__inner -->
+    </section>
+
+    <!-- ABOUT -->
+    <main class="about">
+        <div class="container">
+            <div class="about__header">
+                <button class="about__btn active" id="appearance_btn">Внешний вид</button>
+                <button class="about__btn" id="hold_btn">Крепеж</button>
+                <button class="about__btn" id="cage_btn">Обрешетка</button>
+                <button class="about__btn" id="mount_btn">Монтаж</button>
+                <button class="about__btn" id="sum_btn">Подсчет</button>
+            </div> <!-- /.about__header -->
+            <div class="about__inner">
+                <div class="description show" id="appearance_block">
+                    <div class="description__photo">
+                        <div class="chair_slider">
+
+                            <input type="radio" class="chair_radio" name="slide_img" id="img_1" checked>
+                            <input type="radio" class="chair_radio" name="slide_img" id="img_2">
+                            <input type="radio" class="chair_radio" name="slide_img" id="img_3">
+                            <input type="radio" class="chair_radio" name="slide_img" id="img_4">
+                            <input type="radio" class="chair_radio" name="slide_img" id="img_5">
+
+                            <div class="chair_item">
+                                <div class="chair_image">
+                                    <div class="switcher_slide" id="first">
+                                        <img src="images/%D0%9A%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D0%BE-%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9.jpg" alt="#">
+                                    </div>
+                                    <div class="chair_button">
+                                        <label class="switcher" id="switcher1" for="img_1"><img class="chair_color" src="images/terrakot.jpg" alt="">Коричнево-красный</label></div>
+                                </div>
+                                <div class="chair_image">
+                                    <div class="switcher_slide" id="second">
+                                        <img src="images/%D0%A8%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9.jpg" alt="#">
+                                    </div>
+                                    <div class="chair_button  chair_button--second">
+                                        <label class="switcher" id="switcher2" for="img_2"><img class="chair_color" src="images/brown.jpg" alt="">Шоколадно-коричневый</label>
+                                    </div>
+                                </div>
+                                <div class="chair_image">
+                                    <div class="switcher_slide" id="third">
+                                        <img src="images/%D0%A1%D0%B5%D1%80%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9.jpg" alt="#">
+                                    </div>
+                                    <div class="chair_button  chair_button--third">
+                                        <label class="switcher" id="switcher3" for="img_3"><img class="chair_color" src="images/chokolad.jpg" alt="">Серо-коричневый</label>
+                                    </div>
+                                </div>
+                                <div class="chair_image">
+                                    <div class="switcher_slide" id="fourth">
+                                        <img src="images/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D1%8B%D0%B9.jpg" alt="#">
+                                    </div>
+                                    <div class="chair_button  chair_button--fourth">
+                                        <label class="switcher" id="switcher4" for="img_4"><img class="chair_color" src="images/Gray_graphit.jpg" alt="">Графитовый-серый</label>
+                                    </div>
+                                </div>
+                                <div class="chair_image">
+                                    <div class="switcher_slide" id="fifth">
+                                        <img src="images/%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9.jpg" alt="#">
+                                    </div>
+                                    <div class="chair_button  chair_button--fifth">
+                                        <label class="switcher" id="switcher5" for="img_5"><img class="chair_color" src="images/dark_gray.jpg" alt="">Черный</label>
+                                    </div>
+                                </div>
+                            </div> <!-- /.chair_item -->
+                        </div> <!-- /.chair_slider -->
+                    </div> <!-- /.description__photo -->
+                    <div class="description__content">
+                        <h3 class="description__title">Внешний вид КОМПОЗИТПЛАСТ</h3>
+                        <div class="description__text">
+                            <p>Представляет собой кровельный лист формы черепицы, в состав которого входит высококачественное сырьё особо устойчивое к механическим, атмосферным и температурным воздействиям.</p>
+                            <p>Доступно несколько цветовых решений.</p>
+                        </div>
+                        <a href="" class="description__link">Подробнее</a>
+                    </div>
+                </div> <!-- /.description -->
+                <div class="description" id="hold_block">
+                    <div class="description__photo">3</div>
+                    <div class="description__content">4</div>
+                </div> <!-- /.description -->
+                <div class="description" id="cage_block">
+                    <div class="description__photo">5</div>
+                    <div class="description__content">6</div>
+                </div> <!-- /.description -->
+                <div class="description" id="mount_block">
+                    <div class="description__photo">7</div>
+                    <div class="description__content">8</div>
+                </div> <!-- /.description -->
+                <div class="description" id="sum_block">
+                    <div class="description__photo">9</div>
+                    <div class="description__content">10</div>
+                </div>
+            </div> <!-- /.about__inner -->
+        </div> <!-- /.container -->
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
