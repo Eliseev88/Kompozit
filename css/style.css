@@ -159,9 +159,9 @@ p {
 .intro__inner {
   text-align: center;
   position: absolute;
-  top: 10rem;
+  top: 40%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate3d(-50%, -60%, 0);
   z-index: 2;
 }
 .intro__title {
@@ -184,10 +184,16 @@ p {
   color: #fff;
   font-size: 1.6rem;
   cursor: pointer;
-  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear;
 }
 .intro__btn:hover {
   box-shadow: 0 0 6px #AE7B3C;
+}
+.intro__btn:active {
+  transform: scale(0.9);
+}
+.intro__btn--link {
+  text-decoration: none;
 }
 .slider__inner {
   width: 100%;
@@ -201,10 +207,13 @@ p {
   align-items: center;
   border-top: 1px solid #fff;
 }
+.about {
+  margin-bottom: 6rem;
+}
 .about__header {
   display: flex;
   justify-content: space-between;
-  margin: 0 -1.5rem 5rem;
+  margin: 0 -1.5rem 7rem;
 }
 .about__btn {
   padding: 1.5rem 7.5rem;
@@ -232,9 +241,48 @@ p {
 .description__photo {
   width: 50%;
 }
+.description__photo--hold img {
+  margin-top: -2rem;
+  width: 90%;
+}
 .description__content {
-  padding: 5rem 0 10rem 0;
+  margin-top: -2rem;
+  padding: 0 5rem;
   width: 50%;
+}
+.description__title {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+.description__title--hold {
+  margin-bottom: 3rem;
+}
+.description__text {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+.description__text--hold {
+  margin-bottom: 5rem;
+}
+.description__elements {
+  margin-bottom: 5rem;
+}
+.description__elements--hold {
+  margin-bottom: 8rem;
+}
+.description__info {
+  margin-bottom: 2rem;
+}
+.description__box {
+  margin: 0 -3rem;
+  display: flex;
+}
+.description__element {
+  margin-left: 3rem;
+  text-align: center;
+}
+.description__paragraph--mount {
+  margin-bottom: 6rem;
 }
 .chair_slider {
   position: relative;
@@ -310,6 +358,9 @@ p {
 /* HELPERS */
 .pos-rel {
   position: relative;
+}
+.w100 {
+  width: 100%;
 }
 /* SLIDER */
 /* Slider */
@@ -471,7 +522,7 @@ p {
 @media (max-width: 576px) {
   /* INTRO */
   .intro__inner {
-    top: 6rem;
+    top: 50%;
   }
   .intro__title {
     font-weight: 700;
