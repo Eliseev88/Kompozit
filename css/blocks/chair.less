@@ -1,6 +1,10 @@
 // main: ../style.less
 
-.chair_slider {
+.chair_item {
+    position: relative;
+}
+
+.chair_images {
     position: relative;
     width: 100%;
 }
@@ -9,31 +13,17 @@
     display: none;
 }
 
-.chair_item {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+.chair__buttons {
+    position: absolute;
+    top: 6rem;
+    left: 0;
 }
 
 .chair_button {
-    position: absolute;
-    top: 5rem;
-    left: 0;
+    margin-bottom: 2rem;
 
-    &--second {
-        top: 12rem;
-    }
-
-    &--third {
-        top: 19rem;
-    }
-    
-    &--fourth {
-        top: 26rem;
-    }
-    
-    &--fifth {
-        top: 33rem;
+    img {
+        margin-right: 1rem;
     }
 }
 
