@@ -362,6 +362,94 @@ p {
   visibility: visible;
   opacity: 1;
 }
+.footer {
+  background: #282B22;
+  color: #EAE5E5;
+}
+.footer__inner {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer__nav,
+.footer__social,
+.footer__contacts,
+.footer__address {
+  min-width: fit-content;
+  margin-bottom: 20px;
+}
+.footer__nav h4,
+.footer__social h4,
+.footer__contacts h4,
+.footer__address h4 {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+.footer__nav-link,
+.footer__social-link,
+.footer__contacts-link,
+.footer__address-link {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: inherit;
+}
+.footer__nav-link:hover,
+.footer__social-link:hover,
+.footer__contacts-link:hover,
+.footer__address-link:hover {
+  color: #D39C55;
+}
+.footer__nav-el {
+  margin: 15px 0;
+}
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__social-link {
+  display: block;
+}
+.footer__social-link-icon {
+  width: 40px;
+  height: 40px;
+  fill: #EAE5E5;
+}
+.footer__social-link-icon path {
+  stroke: #EAE5E5;
+}
+.footer__social-link-icon polyline {
+  stroke: #EAE5E5;
+}
+.footer__social-link-icon:hover {
+  fill: #D39C55;
+}
+.footer__social-link-icon:hover path {
+  stroke: #D39C55;
+}
+.footer__social-link-icon:hover polyline {
+  stroke: #D39C55;
+}
+.footer__contacts-phone {
+  display: block;
+  margin: 10px 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #EAE5E5;
+  font-size: 1.5rem;
+}
+.footer__contacts-phone:hover {
+  color: #D39C55;
+}
+.footer__address p {
+  padding: 5px 10px;
+}
 .contacts {
   margin-top: 40px;
 }
