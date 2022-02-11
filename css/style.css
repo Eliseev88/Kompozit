@@ -445,7 +445,6 @@ p {
 .footer__contacts,
 .footer__address {
   min-width: fit-content;
-  margin-bottom: 20px;
 }
 .footer__nav h4,
 .footer__social h4,
@@ -472,7 +471,7 @@ p {
   color: #d39c55;
 }
 .footer__nav-el {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 .footer__social-list {
   display: flex;
