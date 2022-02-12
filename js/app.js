@@ -11,7 +11,7 @@ $("#nav-burger__close").on("click", function (event) {
     $("body").removeClass("no-scroll");
 });
 
-/* Slider */
+/* Intro slider */
 $(document).ready(function () {
     $('.slider').slick({
         appendArrows: $('.slick__arrows'),
@@ -29,6 +29,32 @@ $(document).ready(function () {
     });
 });
 
+/* Gallery slider */
+$(document).ready(function () {
+    $('.gallery__slider').slick({
+        appendArrows: $('.gallery__arrows'),
+        prevArrow: '<button id="prev" type="button" class="gallery__arrow gallery__arrow--left"><i class="fas fa-chevron-circle-right"></i></button>',
+        nextArrow: '<button id="next" type="button" class="gallery__arrow gallery__arrow--right"><i class="fas fa-chevron-circle-left"></i></button>',
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3,
+        waitForAnimate: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            },
+        ]
+    });
+});
+
+
+
+
 /* Change blocks in about section */
 // 1
 $("#appearance_btn").on("click", function (event) {
@@ -37,7 +63,7 @@ $("#appearance_btn").on("click", function (event) {
     $("#cage_block").removeClass("show");
     $("#mount_block").removeClass("show");
     $("#sum_block").removeClass("show");
-    
+
     $("#appearance_btn").addClass("active");
     $("#hold_btn").removeClass("active");
     $("#cage_btn").removeClass("active");
@@ -51,7 +77,7 @@ $("#hold_btn").on("click", function (event) {
     $("#cage_block").removeClass("show");
     $("#mount_block").removeClass("show");
     $("#sum_block").removeClass("show");
-    
+
     $("#hold_btn").addClass("active");
     $("#appearance_btn").removeClass("active");
     $("#cage_btn").removeClass("active");
@@ -79,7 +105,7 @@ $("#mount_btn").on("click", function (event) {
     $("#hold_block").removeClass("show");
     $("#cage_block").removeClass("show");
     $("#sum_block").removeClass("show");
-    
+
     $("#mount_btn").addClass("active");
     $("#appearance_btn").removeClass("active");
     $("#hold_btn").removeClass("active");
@@ -93,7 +119,7 @@ $("#sum_btn").on("click", function (event) {
     $("#hold_block").removeClass("show");
     $("#cage_block").removeClass("show");
     $("#mount_block").removeClass("show");
-    
+
     $("#sum_btn").addClass("active");
     $("#appearance_btn").removeClass("active");
     $("#hold_btn").removeClass("active");
