@@ -279,16 +279,15 @@ p {
 }
 .description__box {
   width: 100%;
-  margin: 0 -3rem;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .description__element {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-left: 3rem;
+  width: 30%;
   text-align: center;
 }
 .description__element img {
@@ -298,6 +297,14 @@ p {
 }
 .description__paragraph--mount {
   margin-bottom: 6rem;
+}
+@media screen and (min-width: 600px) {
+  .description__box {
+    justify-content: start;
+  }
+  .description__element {
+    width: 20%;
+  }
 }
 .chair_item {
   position: relative;
@@ -965,10 +972,6 @@ p {
   /* DESCRIPTION */
   .description__box {
     flex-wrap: wrap;
-  }
-  .description__element {
-    width: 20%;
-    margin-bottom: 2rem;
   }
   .description__element--hold {
     width: 30%;
