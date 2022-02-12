@@ -52,7 +52,7 @@ p {
 }
 .header__photo {
   height: 7rem;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .header__photo:hover {
   transform: scale(1.05);
@@ -64,7 +64,7 @@ p {
   transition: text-shadow 0.2s linear;
 }
 .header__link:hover {
-  text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
+  text-shadow: 0 0 0.5px #333, 0 0 0.5px #333, 0 0 0.5px #333;
 }
 .header__nav {
   display: flex;
@@ -82,7 +82,7 @@ p {
   background-color: #fff;
   height: 100vh;
   transform: translateX(100%);
-  transition: transform .5s linear;
+  transition: transform 0.5s linear;
   overflow: auto;
 }
 .nav-burger.active {
@@ -124,7 +124,7 @@ p {
   font-size: 0;
   position: relative;
   background-color: #333;
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 }
 .nav-toggle__item::before,
 .nav-toggle__item:after {
@@ -136,7 +136,7 @@ p {
   top: -12px;
   right: 0px;
   z-index: 1;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .nav-toggle__item::before {
   top: 12px;
@@ -225,7 +225,7 @@ p {
   font-size: 1.6rem;
   color: #1C242C;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .about__btn:hover,
 .about__btn.active {
@@ -324,7 +324,7 @@ p {
   margin-right: 5px;
   border-radius: 50%;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
   height: 42px;
 }
 .chair_color:hover {
@@ -429,8 +429,8 @@ p {
   color: #AE7B3C;
 }
 .footer {
-  background: #282b22;
-  color: #eae5e5;
+  background: #282B22;
+  color: #FFFFFF;
 }
 .footer__inner {
   padding: 20px 0;
@@ -468,7 +468,7 @@ p {
 .footer__social-link:hover,
 .footer__contacts-link:hover,
 .footer__address-link:hover {
-  color: #d39c55;
+  color: #D39C55;
 }
 .footer__nav-el {
   margin: 5px 0;
@@ -484,33 +484,33 @@ p {
 .footer__social-link-icon {
   width: 40px;
   height: 40px;
-  fill: #eae5e5;
+  fill: #FFFFFF;
 }
 .footer__social-link-icon path {
-  stroke: #eae5e5;
+  stroke: #FFFFFF;
 }
 .footer__social-link-icon polyline {
-  stroke: #eae5e5;
+  stroke: #FFFFFF;
 }
 .footer__social-link-icon:hover {
-  fill: #d39c55;
+  fill: #D39C55;
 }
 .footer__social-link-icon:hover path {
-  stroke: #d39c55;
+  stroke: #D39C55;
 }
 .footer__social-link-icon:hover polyline {
-  stroke: #d39c55;
+  stroke: #D39C55;
 }
 .footer__contacts-phone {
   display: block;
   margin: 10px 0;
   padding: 5px 10px;
   text-decoration: none;
-  color: #eae5e5;
+  color: #FFFFFF;
   font-size: 1.5rem;
 }
 .footer__contacts-phone:hover {
-  color: #d39c55;
+  color: #D39C55;
 }
 .footer__address p {
   padding: 5px 10px;
@@ -601,6 +601,157 @@ p {
     height: 350px;
     width: 100%;
   }
+}
+.intro,
+.header,
+.advantage,
+.video,
+.about {
+  display: none;
+}
+.feedback {
+  padding: 2.5rem 0;
+  background: #3D4A39;
+  color: #FFFFFF;
+  height: fit-content;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.feedback__form h4 {
+  font-size: 2.8rem;
+}
+.feedback__form p {
+  font-size: 1.6rem;
+}
+.feedback__form h4,
+.feedback__form p,
+.feedback__form .feedback-input,
+.feedback__form .feedback-btn,
+.feedback__form .feedback-label {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.feedback__form .feedback-input,
+.feedback__form .feedback-btn {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.feedback-input {
+  background: none !important;
+  outline: none;
+  border: none;
+  border-bottom: 0.15rem solid;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+.feedback-input:focus {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 1 0 0.2rem rgba(158, 158, 158, 0.25);
+  cursor: text;
+}
+.feedback-input:invalid,
+.feedback-input:valid {
+  border-color: #dc3545;
+  padding-right: 2.25rem;
+}
+.feedback-input:valid {
+  border-color: #FFFFFF;
+}
+.feedback-input:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 1 0 0.5rem rgba(220, 53, 69, 0.25);
+}
+.feedback-input:valid:focus {
+  border-color: #198754;
+  box-shadow: 0 1 0 0.3rem rgba(25, 135, 84, 0.25);
+}
+.feedback-btn {
+  background: #AE7B3C;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  padding: 10rem;
+  border-radius: 0.15rem;
+}
+.feedback-btn:hover {
+  background: #a77b43;
+  cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .feedback__form h4,
+  .feedback__form p,
+  .feedback__form .feedback-input,
+  .feedback__form .feedback-btn,
+  .feedback__form .feedback-label {
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+}
+/* для элемента input c type="checkbox" */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  /* для элемента label, связанного с .custom-checkbox */
+  /* создание в label псевдоэлемента before со следующими стилями */
+  /* стили при наведении курсора на checkbox */
+  /* стили для активного чекбокса (при нажатии на него) */
+  /* стили для чекбокса, находящегося в фокусе */
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  /* стили для чекбокса, находящегося в состоянии checked */
+  /* стили для чекбокса, находящегося в состоянии disabled */
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+.custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(126, 95, 10, 0.25);
+}
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: #5d772d;
+}
+.custom-checkbox:checked + label::before {
+  border-color: #b4b8b2;
+  background-color: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+.custom-checkbox .checkbox {
+  margin-bottom: 1em;
 }
 /* HELPERS */
 .pos-rel {
@@ -710,7 +861,7 @@ p {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .slick-arrow:hover {
   transform: scale(1.05);
@@ -729,11 +880,11 @@ p {
   background: none;
   border-radius: 50%;
   font-size: 1.1rem;
-  padding: .8rem 1.1rem;
+  padding: 0.8rem 1.1rem;
   color: #fff;
   cursor: pointer;
   border-color: #fff;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 .slick-dots button:hover {
   transform: scale(1.05);
