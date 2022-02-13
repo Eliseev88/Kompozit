@@ -53,8 +53,6 @@ $(document).ready(function () {
 });
 
 
-
-
 /* Change blocks in about section */
 // 1
 $("#appearance_btn").on("click", function (event) {
@@ -125,4 +123,20 @@ $("#sum_btn").on("click", function (event) {
     $("#hold_btn").removeClass("active");
     $("#mount_btn").removeClass("active");
     $("#cage_btn").removeClass("active");
+});
+
+
+/* Scroll to section */
+$("[data-scroll]").on("click", function (event) {
+    event.preventDefault();
+    let $this = $(this),
+        blockId = $this.data('scroll'),
+        blockOffset = $(blockId).offset().top - 110;
+    $("#nav a").removeClass("active");
+    $this.addClass("active");
+    $("html, body").animate({
+        scrollTop: blockOffset
+    }, 500); 
+    $("#nav-burger").removeClass("active");
+    $("#nav-toggle").removeClass("active");
 });

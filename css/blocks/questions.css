@@ -19,7 +19,7 @@
   text-align: center;
 }
 .questions__details {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   cursor: pointer;
   font-size: 2rem;
 }
@@ -39,4 +39,5 @@
 .questions__answer {
   margin-left: 2rem;
   font-style: italic;
+  cursor: context-menu;
 }

@@ -18,7 +18,7 @@
 .header__photo {
     height: 7rem;
     transition: transform .2s linear;
-    
+
     &:hover {
         transform: scale(1.05);
     }
@@ -29,10 +29,18 @@
     text-decoration: none;
     font-size: 2rem;
     transition: text-shadow .2s linear;
-    
+
     &:hover {
-       text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
-    }   
+        text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
+    }
+
+    &.active {
+        text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
+    }
+}
+
+#small-logo {
+    display: none;
 }
 
 .header__nav {

@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8d73d6a795.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -17,20 +15,20 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container pos-rel">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a class="header__link" href="/"><img class="header__photo" src="images/kp-black.jpg"
-                            alt="logo"></a>
+                    <a class="header__link" href="/" id="big-logo"><img class="header__photo" src="images/logo.png" alt="logo"></a>
+                    <a class="header__link" href="/" id="small-logo"><img class="header__photo" src="images/small-logo.png" alt="logo"></a>
                 </div>
                 <nav class="header__nav" id="nav">
-                    <div class="header__nav-el"><a class="header__link" href="">Описание</a></div>
-                    <div class="header__nav-el"><a class="header__link" href="">Цена</a></div>
-                    <div class="header__nav-el"><a class="header__link" href="">Вопрос-ответ</a></div>
-                    <div class="header__nav-el"><a class="header__link" href="">Акции</a></div>
-                    <div class="header__nav-el"><a class="header__link" href="">Доставка</a></div>
-                    <div class="header__nav-el"><a class="header__link" href="">Контакты</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="#" data-scroll="#about">Описание</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="#" data-scroll="#advantage">Преимущества</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="#" data-scroll="#gallery">Галерея</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="#" data-scroll="#video">Видео</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="#" data-scroll="#questions">Вопросы</a></div>
+                    <div class="header__nav-el"><a class="header__link" href="#" data-scroll="#contacts">Контакты</a></div>
                 </nav>
 
                 <button class="nav-toggle" type="button" id="nav-toggle">
@@ -43,13 +41,12 @@
                     <menu class="nav-burger__menu">
                         <nav class="nav-burger__nav">
                             <ul>
-                                <li><a href="#" class="nav-burger__link">Главная</a></li>
-                                <li><a href="#" class="nav-burger__link">Описание</a></li>
-                                <li><a href="#" class="nav-burger__link">Цена</a></li>
-                                <li><a href="#" class="nav-burger__link">Вопрос-ответ</a></li>
-                                <li><a href="#" class="nav-burger__link">Акции</a></li>
-                                <li><a href="#" class="nav-burger__link">Доставка</a></li>
-                                <li><a href="#" class="nav-burger__link">Контакты</a></li>
+                                <li><a href="#" class="nav-burger__link" data-scroll="#about">Описание</a></li>
+                                <li><a href="#" class="nav-burger__link" data-scroll="#advantage">Преимущества</a></li>
+                                <li><a href="#" class="nav-burger__link" data-scroll="#gallery">Галерея</a></li>
+                                <li><a href="#" class="nav-burger__link" data-scroll="#video">Видео</a></li>
+                                <li><a href="#" class="nav-burger__link" data-scroll="#questions">Вопросы</a></li>
+                                <li><a href="#" class="nav-burger__link" data-scroll="#contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </menu>
@@ -82,7 +79,7 @@
     </section>
 
     <!-- ABOUT -->
-    <main class="about">
+    <main class="about" id="about">
         <div class="container">
             <div class="about__header">
                 <button class="about__btn active" id="appearance_btn">Внешний вид</button>
@@ -111,20 +108,16 @@
                             <div class="chair_item">
                                 <div class="chair_images">
                                     <div class="switcher_slide" id="first">
-                                        <img src="images/%D0%9A%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D0%BE-%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9.jpg"
-                                            alt="#">
+                                        <img src="images/%D0%9A%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D0%BE-%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9.jpg" alt="#">
                                     </div>
                                     <div class="switcher_slide" id="second">
-                                        <img src="images/%D0%A8%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9.jpg"
-                                            alt="#">
+                                        <img src="images/%D0%A8%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9.jpg" alt="#">
                                     </div>
                                     <div class="switcher_slide" id="third">
-                                        <img src="images/%D0%A1%D0%B5%D1%80%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9.jpg"
-                                            alt="#">
+                                        <img src="images/%D0%A1%D0%B5%D1%80%D0%BE-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9.jpg" alt="#">
                                     </div>
                                     <div class="switcher_slide" id="fourth">
-                                        <img src="images/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D1%8B%D0%B9.jpg"
-                                            alt="#">
+                                        <img src="images/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D1%8B%D0%B9.jpg" alt="#">
                                     </div>
                                     <div class="switcher_slide" id="fifth">
                                         <img src="images/%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9.jpg" alt="#">
@@ -133,25 +126,19 @@
 
                                 <div class="chair__buttons">
                                     <div class="chair_button  chair_button--second">
-                                        <label class="switcher" id="switcher2" for="img_2"><img class="chair_color"
-                                                src="images/brown.jpg" alt=""><span>Шоколадно-коричневый</span></label>
+                                        <label class="switcher" id="switcher2" for="img_2"><img class="chair_color" src="images/brown.jpg" alt=""><span>Шоколадно-коричневый</span></label>
                                     </div>
                                     <div class="chair_button">
-                                        <label class="switcher" id="switcher1" for="img_1"><img class="chair_color"
-                                                src="images/terrakot.jpg" alt=""><span>Коричнево-красный</span></label>
+                                        <label class="switcher" id="switcher1" for="img_1"><img class="chair_color" src="images/terrakot.jpg" alt=""><span>Коричнево-красный</span></label>
                                     </div>
                                     <div class="chair_button  chair_button--third">
-                                        <label class="switcher" id="switcher3" for="img_3"><img class="chair_color"
-                                                src="images/chokolad.jpg" alt=""><span>Серо-коричневый</span></label>
+                                        <label class="switcher" id="switcher3" for="img_3"><img class="chair_color" src="images/chokolad.jpg" alt=""><span>Серо-коричневый</span></label>
                                     </div>
                                     <div class="chair_button  chair_button--fourth">
-                                        <label class="switcher" id="switcher4" for="img_4"><img class="chair_color"
-                                                src="images/Gray_graphit.jpg"
-                                                alt=""><span>Графитовый-серый</span></label>
+                                        <label class="switcher" id="switcher4" for="img_4"><img class="chair_color" src="images/Gray_graphit.jpg" alt=""><span>Графитовый-серый</span></label>
                                     </div>
                                     <div class="chair_button  chair_button--fifth">
-                                        <label class="switcher" id="switcher5" for="img_5"><img class="chair_color"
-                                                src="images/dark_gray.jpg" alt=""><span>Черный</span></label>
+                                        <label class="switcher" id="switcher5" for="img_5"><img class="chair_color" src="images/dark_gray.jpg" alt=""><span>Черный</span></label>
                                     </div>
                                 </div> <!-- /.chair__buttons -->
                             </div> <!-- /.chair_item -->
@@ -290,7 +277,7 @@
     </main>
 
     <!-- VIDEO -->
-    <div class="video">
+    <div class="video" id="video">
         <div class="video__header">
             <div class="container">
                 <h2 class="video__title">КОМПОЗИТПЛАСТ - современный кровельный материал для скатных крыш</h2>
@@ -300,16 +287,13 @@
         </div>
         <div class="container">
             <div class="video__youtube">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/58kBZfO5EqQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/58kBZfO5EqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div> <!-- /.video -->
 
     <!-- ADVANTAGE -->
-    <section class="advantage">
+    <section class="advantage" id="advantage">
         <h2 class="advantage__header">преимущество Композитпласт</h2>
         <div class="container">
             <div class="advantage__inner">
@@ -392,7 +376,7 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2 class="gallery__header">Галлерея</h2>
         <div class="container">
             <div class="gallery__slider">
@@ -417,7 +401,7 @@
 
 
     <!-- QUESTIONS -->
-    <section class="questions">
+    <section class="questions" id="questions">
         <div class="container">
             <h2 class="questions__header">Вопросы от покупателей</h2>
             <div class="questions__text">
@@ -454,9 +438,7 @@
                 <details class="questions__details">
                     <summary class="questions__summary">В вашем композитном материале есть ли тоже смола или битум?
                     </summary>
-                    <div class="questions__answer">По данным <a
-                            href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB"
-                            target="_blank">«Википедии»</a>: Композитный материал (КМ), композит — многокомпонентный
+                    <div class="questions__answer">По данным <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB" target="_blank">«Википедии»</a>: Композитный материал (КМ), композит — многокомпонентный
                         материал, изготовленный из двух или более компонентов с существенно различными физическими
                         и/или химическими свойствами, которые, в сочетании, приводят к появлению нового материала с
                         характеристиками, отличными от характеристик отдельных компонентов и не являющимися простой
@@ -477,12 +459,8 @@
                     <div class="questions__answer">Из названия уже должно быть понятно, что это два совершенно
                         разных по свойствам и характеристикам кровельных материала. Композитпласт рассчитан на
                         большой срок эксплуатации и разработан с учетом современных требований для кровельных
-                        материалов!<p>Читайте отзывы в интернете <a
-                                href="https://irecommend.ru/content/krovlya-po-novomu-dostoinstva-i-nedostatki-na-lichnom-opyte"
-                                target="_blank">(пример развернутого отзыва клиента Композитпласт)</a> и сравнивайте
-                            материалы самостоятельно. Публикаций на эту тему предостаточно <a
-                                href="https://1reg.by/2019/04/09/vyibiraem-nadezhnuyu-krovlyu-sravnenie-sovremennyih-materialov/"
-                                target="_blank">(пример публикации о кровельном материале Композитпласт)</a>!</p>
+                        материалов!<p>Читайте отзывы в интернете <a href="https://irecommend.ru/content/krovlya-po-novomu-dostoinstva-i-nedostatki-na-lichnom-opyte" target="_blank">(пример развернутого отзыва клиента Композитпласт)</a> и сравнивайте
+                            материалы самостоятельно. Публикаций на эту тему предостаточно <a href="https://1reg.by/2019/04/09/vyibiraem-nadezhnuyu-krovlyu-sravnenie-sovremennyih-materialov/" target="_blank">(пример публикации о кровельном материале Композитпласт)</a>!</p>
                     </div>
                 </details>
                 <details class="questions__details">
@@ -664,8 +642,7 @@
                         из специального листового кровельного металла толщиной 0.45мм, покрытие матовое (как
                         наиболее подходящее по внешнему виду к кровельному покрытию Композитпласт).
                         <p>Стандартная длина изделия 2 метра. Монтажная длина около 1,9 метра.</p>
-                        <p>Цены на доборные элементы вы можете посмотреть на нашем сайте в разделе <a
-                                href="#">Описание</a> (кнопка "Подробнее")</p>
+                        <p>Цены на доборные элементы вы можете посмотреть на нашем сайте в разделе <a href="#">Описание</a> (кнопка "Подробнее")</p>
                         <p>В случае нестандартных размеров высылайте чертеж элемента и цена на них будет
                             рассчитываться отдельно!</p>
                     </div>
@@ -697,7 +674,7 @@
 
     <!-- CONTACTS -->
 
-    <div class="contacts container">
+    <div class="contacts container" id="contacts">
         <h3>Как с нами связаться</h3>
         <div class="contacts-info">
             <div class="contacts-info__text">
@@ -724,18 +701,14 @@
                 <p><b>Офис:</b> Москва, Кутузовский проспект, дом 36 стр. 3</p>
             </div>
             <div class="contacts-address__map">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab01f7664870f44af82cc3e915df0f451ca29b623c44cf9680400826b890c63ab&amp;source=constructor"
-                    width="100%" height="100%" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab01f7664870f44af82cc3e915df0f451ca29b623c44cf9680400826b890c63ab&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
             </div>
             <div class="contacts-address__text">
                 <p><b>Склад:</b>Московская область, г.Истра, ул. Почтовая, дом 31
                 </p>
             </div>
             <div class="contacts-address__map">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e1190d24be2bfbdf15155c6031e2802585485b57c6f5e0c34180e24377b843&amp;source=constructor"
-                    width="100%" height="100%" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e1190d24be2bfbdf15155c6031e2802585485b57c6f5e0c34180e24377b843&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -769,22 +742,22 @@
                 <nav class="footer__nav" id="nav">
                     <h4>навигация по сайту</h4>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#">Описание</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#about">Описание</a>
                     </div>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#">Цена</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#advantage" data-scroll="#advantage">Преимущества</a>
                     </div>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#">Вопрос-ответ</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#gallery">Галерея</a>
                     </div>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#">Акции</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#video">Видео</a>
                     </div>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#">Доставка</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#questions">Вопросы</a>
                     </div>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#">Контакты</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#contacts">Контакты</a>
                     </div>
                 </nav>
 
@@ -793,37 +766,26 @@
                     <div class="footer__social-list">
                         <a href="#" class="footer__social-link">
                             <!-- Instagramm -->
-                            <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 50 50" width="100px" height="100px">
-                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"
-                                    d="M16,46h18c6.627,0,12-5.373,12-12V16c0-6.627-5.373-12-12-12H16C9.373,4,4,9.373,4,16v18C4,40.627,9.373,46,16,46z" />
-                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"
-                                    d="M25 15A10 10 0 1 0 25 35A10 10 0 1 0 25 15Z" />
+                            <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px">
+                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M16,46h18c6.627,0,12-5.373,12-12V16c0-6.627-5.373-12-12-12H16C9.373,4,4,9.373,4,16v18C4,40.627,9.373,46,16,46z" />
+                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M25 15A10 10 0 1 0 25 35A10 10 0 1 0 25 15Z" />
                                 <path d="M37 11A2 2 0 1 0 37 15A2 2 0 1 0 37 11Z" /></svg>
                         </a>
                         <a href="#" class="footer__social-link">
                             <!-- whats app -->
 
-                            <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 50 50" width="100px" height="100px">
-                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"
-                                    d="M19.102,15.022c-0.479-1.137-0.966-0.983-1.329-1.001C17.429,14.005,17.036,14,16.642,14c-0.394,0-1.033,0.146-1.575,0.73S13,16.724,13,19.594s2.116,5.641,2.411,6.031c0.296,0.389,4.164,6.278,10.087,8.804c1.409,0.6,2.509,0.959,3.366,1.228c1.414,0.444,2.702,0.381,3.72,0.231c1.134-0.167,3.494-1.411,3.986-2.772c0.492-1.362,0.492-2.529,0.344-2.772c-0.148-0.243-0.542-0.389-1.132-0.681c-0.59-0.292-3.494-1.703-4.036-1.896c-0.542-0.195-0.935-0.292-1.329,0.292c-0.394,0.584-1.525,1.896-1.869,2.286c-0.344,0.389-0.689,0.438-1.279,0.146c-0.59-0.292-2.494-0.907-4.748-2.894c-1.756-1.546-2.941-3.455-3.285-4.039s-0.037-0.899,0.259-1.19c0.266-0.262,0.59-0.681,0.886-1.022c0.296-0.341,0.394-0.584,0.59-0.973s0.098-0.73-0.05-1.022C20.775,19.059,19.594,16.19,19.102,15.022z" />
-                                <path fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10"
-                                    stroke-width="2"
-                                    d="M25,3C12.85,3,3,12.85,3,25c0,4.072,1.111,7.884,3.04,11.155L3,47l11.274-2.793C17.448,45.983,21.104,47,25,47c12.15,0,22-9.85,22-22S37.15,3,25,3z" />
+                            <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px">
+                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M19.102,15.022c-0.479-1.137-0.966-0.983-1.329-1.001C17.429,14.005,17.036,14,16.642,14c-0.394,0-1.033,0.146-1.575,0.73S13,16.724,13,19.594s2.116,5.641,2.411,6.031c0.296,0.389,4.164,6.278,10.087,8.804c1.409,0.6,2.509,0.959,3.366,1.228c1.414,0.444,2.702,0.381,3.72,0.231c1.134-0.167,3.494-1.411,3.986-2.772c0.492-1.362,0.492-2.529,0.344-2.772c-0.148-0.243-0.542-0.389-1.132-0.681c-0.59-0.292-3.494-1.703-4.036-1.896c-0.542-0.195-0.935-0.292-1.329,0.292c-0.394,0.584-1.525,1.896-1.869,2.286c-0.344,0.389-0.689,0.438-1.279,0.146c-0.59-0.292-2.494-0.907-4.748-2.894c-1.756-1.546-2.941-3.455-3.285-4.039s-0.037-0.899,0.259-1.19c0.266-0.262,0.59-0.681,0.886-1.022c0.296-0.341,0.394-0.584,0.59-0.973s0.098-0.73-0.05-1.022C20.775,19.059,19.594,16.19,19.102,15.022z" />
+                                <path fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M25,3C12.85,3,3,12.85,3,25c0,4.072,1.111,7.884,3.04,11.155L3,47l11.274-2.793C17.448,45.983,21.104,47,25,47c12.15,0,22-9.85,22-22S37.15,3,25,3z" />
                             </svg>
 
                         </a>
                         <a href="#" class="footer__social-link">
                             <!-- telegramm -->
-                            <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 50 50" width="100px" height="100px">
-                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"
-                                    d="M43.361,7.242	C42.077,7.758,5.633,23.389,5.633,23.389s-1.765,0.614-1.625,1.748s1.58,1.653,1.58,1.653l9.38,3.212c0,0,2.832,9.448,3.39,11.241	c0.558,1.796,1.004,1.838,1.004,1.838c0.518,0.23,0.992-0.137,0.992-0.137l6.061-5.622l9.448,7.369	c2.554,1.134,3.483-1.228,3.483-1.228l6.509-33.925C46.431,6.913,44.717,6.699,43.361,7.242z" />
-                                <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-miterlimit="10" stroke-width="2" points="15,30 39,14 22,34" />
-                                <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-miterlimit="10" stroke-width="2" points="20,43 22,34 26,37" /></svg>
+                            <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100px" height="100px">
+                                <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M43.361,7.242	C42.077,7.758,5.633,23.389,5.633,23.389s-1.765,0.614-1.625,1.748s1.58,1.653,1.58,1.653l9.38,3.212c0,0,2.832,9.448,3.39,11.241	c0.558,1.796,1.004,1.838,1.004,1.838c0.518,0.23,0.992-0.137,0.992-0.137l6.061-5.622l9.448,7.369	c2.554,1.134,3.483-1.228,3.483-1.228l6.509-33.925C46.431,6.913,44.717,6.699,43.361,7.242z" />
+                                <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="15,30 39,14 22,34" />
+                                <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" points="20,43 22,34 26,37" /></svg>
                         </a>
                     </div>
                 </div>
@@ -845,6 +807,13 @@
             </div>
         </div>
     </footer>
+
+
+
+
+    <!-- MODALS -->
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
