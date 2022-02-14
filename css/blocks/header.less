@@ -1,6 +1,7 @@
 // main: ../style.less
 
 .header {
+    height: 105px;
     padding: 1.5rem 0;
     background-color: #fff;
     position: sticky;
@@ -15,8 +16,12 @@
     align-items: center;
 }
 
+.header__logo {
+    margin-top: 1.5rem;
+}
+
 .header__photo {
-    height: 7rem;
+    display: block;
     transition: transform .2s linear;
 
     &:hover {

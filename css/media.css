@@ -129,6 +129,15 @@
   .gallery__slider {
     width: 100%;
   }
+  /* CALC */
+  .calc__col {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .calc__col--input,
+  .calc__col--res {
+    text-align: center;
+  }
 }
 @media (max-width: 820px) {
   /* ABOUT */
@@ -294,6 +303,13 @@
   }
   .questions__header {
     font-size: 3rem;
+  }
+  /* CALC */
+  .calc__header {
+    font-size: 3.5rem;
+  }
+  .calc__img {
+    height: 187px;
   }
 }
 @media (max-width: 444px) {

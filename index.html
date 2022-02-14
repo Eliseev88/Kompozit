@@ -74,7 +74,7 @@
                 <p>Лист кровельный полимерный - современный кровельный материал, технологические и эксплуатационные
                     характеристикphotoи которого в несколько раз превосходят параметры привычных нам материалов.</p>
             </div>
-            <button class="intro__btn" type="button">Заказать</button>
+            <button class="intro__btn" type="button" data-scroll='#calc'>Рассчитать</button>
         </div> <!-- /intro__inner -->
     </section>
 
@@ -399,7 +399,6 @@
         </div> <!-- /.container -->
     </section>
 
-
     <!-- QUESTIONS -->
     <section class="questions" id="questions">
         <div class="container">
@@ -592,7 +591,7 @@
                         позволяет листам не так быстро, как например металлу, изменять свою температуру в контакте с
                         внешней средой. В утренние и вечерние часы выпадение конденсата на поверхности
                         Композитпласта минимально либо практически равно нулю.
-                        <p>На <a href="#">схеме обрешетки</a> для Композитпласт показана гидроизоляционная пленка и
+                        <p>На <a href="#" data-scroll="#about">схеме обрешетки</a> для Композитпласт показана гидроизоляционная пленка и
                             считается необходимым элементом.</p>
                         <p>Это связано с дополнительной защитой Вашей кровли от некачественного монтажа без
                             соблюдений необходимых условий и рекомендаций от производителя по <a href="#">монтажу</a>
@@ -604,7 +603,7 @@
                         него сразу поверх досок? Что нужно знать и учесть в этом случае?</summary>
                     <div class="questions__answer">Монтаж Композитпласта допускается на подготовленный ровный
                         сплошной настил. Каждой ступеньке необходим упор снизу и основа для крепежа. Проще всего
-                        набить рекомендуемую производителем <a href="#">обрешетку под лист Композитпласт</a>. Это
+                        набить рекомендуемую производителем <a href="#" data-scroll="#about">обрешетку под лист Композитпласт</a>. Это
                         позволит гораздо быстрее сделать монтаж Вашей кровли!</div>
                 </details>
                 <details class="questions__details">
@@ -621,7 +620,7 @@
                     <summary class="questions__summary">Как рассчитать нужное количество листов Композитпласт для
                         кровли?</summary>
                     <div class="questions__answer">Для расчета нужного количества листов Композитпласта используйте
-                        <a href="#">калькулятор</a> или <a href="#">соответствующую инструкцию</a>, разработанную
+                        <a href="#" data-scroll="#calc">калькулятор</a> или <a href="#" data-scroll="#about">соответствующую инструкцию</a>, разработанную
                         производителем. В ней есть вся необходимая информация!
                         <p>Обязательно изучите схемы с возможными вариантами по делению (распилу) кровельного листа
                             нажав кнопку «Смотреть пример на схеме».</p>
@@ -642,7 +641,7 @@
                         из специального листового кровельного металла толщиной 0.45мм, покрытие матовое (как
                         наиболее подходящее по внешнему виду к кровельному покрытию Композитпласт).
                         <p>Стандартная длина изделия 2 метра. Монтажная длина около 1,9 метра.</p>
-                        <p>Цены на доборные элементы вы можете посмотреть на нашем сайте в разделе <a href="#">Описание</a> (кнопка "Подробнее")</p>
+                        <p>Цены на доборные элементы вы можете посмотреть на нашем сайте в разделе <a href="#" data-scroll="#about">Описание</a> (кнопка "Подробнее")</p>
                         <p>В случае нестандартных размеров высылайте чертеж элемента и цена на них будет
                             рассчитываться отдельно!</p>
                     </div>
@@ -663,17 +662,106 @@
                     <summary class="questions__summary">Как мне сделать заказ Композитпласт?</summary>
                     <div class="questions__answer">Предварительно определитесь с цветом Композитпласт, с количеством
                         листов, доборных элементов, количеством саморезов.<p>Свяжитесь по телефону, либо
-                            воспользуйтесь <a href="#">формой обратной связи</a> и мы обязательно вам перезвоним! Вы
+                            воспользуйтесь <a href="#" data-scroll="#feedback">формой обратной связи</a> и мы обязательно вам перезвоним! Вы
                             также можете отправить сообщение отделу продаж Композитпласта в <a href="#">Telegram</a>
-                            или <a href="">WhatsApp</a>. Вам сообщат ориентировочные сроки исполнения заказа.</p>
+                            или <a href="#">WhatsApp</a>. Вам сообщат ориентировочные сроки исполнения заказа.</p>
                     </div>
                 </details>
             </div> <!-- /.questions__block -->
         </div> <!-- /.container -->
     </section>
 
-    <!-- CONTACTS -->
+    <!-- CALC -->
+    <div class="calc" id="calc">
+        <div class="container">
+            <h2 class="calc__header">Калькулятор</h2>
+            <div class="calc__text">
+                <p>Расчет площади крыши позволит вам узнать необходимое количество листов Композитпласта, а также саморезов и дополнительных элементов.</p>
+            </div>
+            <div class="calc__wrapper">
+                <div class="calc__col">
+                    <img class="calc__img active" id='img-double' src="images/house.png" alt="house">
+                    <img class="calc__img" id='img-single' src="images/house-single.png" alt="house">
+                    <img class="calc__img" id='img-hip' src="images/house-hip.png" alt="house">
+                    <img class="calc__img" id='img-tent' src="images/house-tent.png" alt="house">
+                </div>
+                <div class="calc__col calc__col--input">
+                    <form action="">
+                        <h5 class="calc__title">Выберите тип крыши</h5>
+                        <select class="calc__select" name="roof_type" id="roof_type">
+                            <option value="double">Двухскатная</option>
+                            <option value="single">Односкатная</option>
+                            <option value="hip">Вальмовая</option>
+                            <option value="tent">Шатровая</option>
+                        </select>
 
+
+                        <div class="calc__box active" id="double-roof">
+                            <label class="calc__label">Длина ската (А)<input type="text" id="double_a"><span>м</span></label>
+                            <label class="calc__label">Длина ската (B)<input type="text" id="double_b"><span>м</span></label>
+                            <label class="calc__label">Длина конька (С)<input type="text" id="double_c"><span>м</span></label>
+                        </div>
+
+
+                        <div class="calc__box" id="single-roof">
+                            <label class="calc__label">Длина здания (B)<input type="text" id="single_b"><span>м</span></label>
+                            <label class="calc__label">Ширина здания (A)<input type="text" id="single_a"><span>м</span></label>
+                            <label class="calc__label">Свес (d1)<input type="text" id="single_d1"><span>м</span></label>
+                            <label class="calc__label">Свес (d2)<input type="text" id="single_d2"><span>м</span></label>
+                            <label class="calc__label">Высота (H)<input type="text" id="single_h"><span>м</span></label>
+                        </div>
+
+
+                        <div class="calc__box" id="hip-roof">
+                            <label class="calc__label">Длина здания (B)<input type="text" id="hip_b"><span>м</span></label>
+                            <label class="calc__label">Ширина здания (A)<input type="text" id="hip_a"><span>м</span></label>
+                            <label class="calc__label">Свес (d1)<input type="text" id="hip_d1"><span>м</span></label>
+                            <label class="calc__label">Свес (d2)<input type="text" id="hip_d2"><span>м</span></label>
+                            <label class="calc__label">Смещение (С)<input type="text" id="hip_c"><span>м</span></label>
+                            <label class="calc__label">Высота (H)<input type="text" id="hip_h"><span>м</span></label>
+                        </div>
+
+
+                        <div class="calc__box" id='tent-roof'>
+                            <label class="calc__label">Длина здания (B)<input type="text" id="tent_b"><span>м</span></label>
+                            <label class="calc__label">Ширина здания (A)<input type="text" id="tent_a"><span>м</span></label>
+                            <label class="calc__label">Свес (d1)<input type="text" id="tent_d1"><span>м</span></label>
+                            <label class="calc__label">Свес (d2)<input type="text" id="tent_d2"><span>м</span></label>
+                            <label class="calc__label">Высота (H)<input type="text" id="tent_h"><span>м</span></label>
+                        </div>
+
+                        <div class="calc__error"></div>
+
+                        <button class="intro__btn intro__btn--calc" type="submit" id="calc_btn">Рассчитать</button>
+                    </form>
+                </div>
+                <div class="calc__col calc__col--res">
+                    <div class="calc__inner">
+                        <div class="calc__res">
+                            Общая площадь кровли: <span id="res-square"></span>
+                        </div>
+                        <div class="calc__res">
+                            Количество листов Композитпласт (2м<sup>2</sup>): <span id="res-kp"></span>
+                        </div>
+                        <div class="calc__res">
+                            Количество саморезов (4,8х35 мм): <span id="res-screw"></span>
+                        </div>
+                        <div class="calc__res">
+                            Планка конька (2м): <span id="res-skate"></span>
+                        </div>
+                        <div class="calc__res">
+                            Ветровая (торцевая) планка (2м): <span id="res-wind"></span>
+                        </div>
+                        <div class="calc__res">
+                            Карнизная планка (2м): <span id="res-cornice"></span>
+                        </div>
+                    </div> <!-- /.calc__inner -->
+                </div> <!-- /.calc__col -->
+            </div> <!-- /.calc__wrapper -->
+        </div> <!-- /.container -->
+    </div> <!-- /.calc -->
+
+    <!-- CONTACTS -->
     <div class="contacts container" id="contacts">
         <h3>Как с нами связаться</h3>
         <div class="contacts-info">
@@ -714,7 +802,7 @@
     </div>
 
     <!-- FEEDBACK -->
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <div class="container">
             <form class="feedback__form" action="#">
                 <h4>Связатся с менеджером</h4>
@@ -807,12 +895,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-    <!-- MODALS -->
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

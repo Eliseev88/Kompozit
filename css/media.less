@@ -173,9 +173,20 @@
             left: 40%;
         }
     }
-    
+
     .gallery__slider {
         width: 100%;
+    }
+
+    /* CALC */
+    .calc__col {
+        width: 100%;
+        margin-bottom: 3rem;
+
+        &--input,
+        &--res {
+            text-align: center;
+        }
     }
 }
 
@@ -311,16 +322,16 @@
 }
 
 @media (max-width: 576px) {
-    
+
     /* HEADER */
     #big-logo {
         display: none;
     }
-    
+
     #small-logo {
         display: block;
     }
-    
+
     /* INTRO */
     .intro__inner {
         top: 50%;
@@ -422,14 +433,23 @@
         margin-bottom: 5rem;
         font-size: 3rem;
     }
-    
+
     /* QUESIONS */
     .questions {
         padding: 5rem 0;
     }
-    
+
     .questions__header {
         font-size: 3rem;
+    }
+
+    /* CALC */
+    .calc__header {
+        font-size: 3.5rem;
+    }
+
+    .calc__img {
+        height: 187px;
     }
 }
 

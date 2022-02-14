@@ -136,7 +136,128 @@ $("[data-scroll]").on("click", function (event) {
     $this.addClass("active");
     $("html, body").animate({
         scrollTop: blockOffset
-    }, 500); 
+    }, 500);
     $("#nav-burger").removeClass("active");
     $("#nav-toggle").removeClass("active");
 });
+
+
+/* Calc */
+// Скрываем (показываем блоки при изменении select)
+$("#roof_type").change(function () {
+    let roofType = $("#roof_type").val();
+    $(".calc__box").removeClass('active');
+    $(".calc__img").removeClass('active');
+    $('.calc__inner').removeClass('active');
+    $('.calc__error').text('');
+
+    if (roofType == 'double') {
+        $('#double-roof').addClass('active');
+        $('#img-double').addClass('active');
+    } else if (roofType === 'single') {
+        $('#single-roof').addClass('active');
+        $('#img-single').addClass('active');
+    } else if (roofType === 'hip') {
+        $('#hip-roof').addClass('active');
+        $('#img-hip').addClass('active');
+    } else if (roofType === 'tent') {
+        $('#tent-roof').addClass('active');
+        $('#img-tent').addClass('active');
+    }
+});
+
+// Сам калькулятор
+$("#calc_btn").on("click", function (event) {
+    event.preventDefault();
+
+    $('.calc__error').text('');
+    let roofType = $('#roof_type').val();
+    let arr = [];
+
+    if (roofType === 'double') {
+        let a = +$('#double_a').val();
+        let b = +$('#double_b').val();
+        let c = +$('#double_c').val();
+
+        if (validateValues(a, b, c)) {
+            countDoubleRoof(a, b, c).forEach(el => arr.push(el))
+        } else return;
+    } else if (roofType === 'single') {
+        let a = +$('#single_a').val();
+        let b = +$('#single_b').val();
+        let h = +$('#single_h').val();
+        let d1 = +$('#single_d1').val();
+        let d2 = +$('#single_d2').val();
+
+        if (validateValues(a, b, h, d1, d2)) {
+            countSingleRoof(a, b, h, d1, d2).forEach(el => arr.push(el))
+        } else return;
+    } else if (roofType === 'tent') {
+        let a = +$('#tent_a').val();
+        let b = +$('#tent_b').val();
+        let h = +$('#tent_h').val();
+        let d1 = +$('#tent_d1').val();
+        let d2 = +$('#tent_d2').val();
+
+        if (validateValues(a, b, h, d1, d2)) {
+            countSingleRoof(a, b, h, d1, d2).forEach(el => arr.push(el))
+        } else return;
+    }
+
+    $('#res-square').html(arr[0] + 'м<sup>2</sup>');
+    $('#res-kp').text(arr[1] + 'шт.');
+    $('#res-screw').text(arr[2] + 'шт.');
+    $('#res-skate').text(arr[3] + 'шт.');
+    $('#res-cornice').text(arr[4] + 'шт.');
+    $('#res-wind').text(arr[5] + 'шт.');
+
+    $('.calc__inner').addClass('active');
+
+});
+
+function validateValues(...args) {
+    if (args.includes(0, 0) || args.includes(NaN, 0)) {
+        $('.calc__error').text('Неправильное значение длины');
+        $('.calс__inner').removeClass('active');
+        return false;
+    }
+    return true;
+}
+
+function countDoubleRoof(a, b, c) {
+    let roofSquare = ((a + b) * c).toFixed(2);
+    let kpAmount = Math.ceil(roofSquare / 2) + 1;
+    let screwAmount = kpAmount * 34;
+    let skatePlank = Math.round(Math.round(c) / 2) + 1;
+    let cornicePlank = (skatePlank - 1) * 2 + 1;
+    let windPlank = Math.round((a + b) / 2) * 2 + 1;
+
+    if (roofSquare <= 1) {
+        kpAmount = 1;
+        screwAmount = 34;
+        skatePlank = 1;
+        cornicePlank = 2;
+        windPlank = 2;
+    }
+    return [roofSquare, kpAmount, screwAmount, skatePlank, cornicePlank, windPlank];
+}
+
+function countSingleRoof(a, b, h, d1, d2) {
+    let width = Math.sqrt(Math.pow(a, 2) + Math.pow(h, 2)).toFixed(2);
+    width = +width + +d2 + +d2;
+    let long = b + d1 + d1;
+
+    let roofSquare = (width * long).toFixed(2);
+    let kpAmount = Math.ceil(roofSquare / 2) + 1;
+    let screwAmount = kpAmount * 34;
+    let skatePlank = 0;
+    let cornicePlank = Math.round(long * 2) + 1;
+    let windPlank = Math.round(width * 2) + 1;
+
+    return [roofSquare, kpAmount, screwAmount, skatePlank, cornicePlank, windPlank];
+
+}
+
+function countTentRoof(a, b, h, d1, d2) {
+    
+}
