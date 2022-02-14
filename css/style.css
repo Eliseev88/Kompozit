@@ -284,16 +284,16 @@ p {
   margin-bottom: 3rem;
 }
 .description__box {
-  margin: 0 -3rem;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .description__element {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-left: 3rem;
+  width: 30%;
   text-align: center;
 }
 .description__element img {
@@ -303,6 +303,14 @@ p {
 }
 .description__paragraph--mount {
   margin-bottom: 6rem;
+}
+@media screen and (min-width: 600px) {
+  .description__box {
+    justify-content: start;
+  }
+  .description__element {
+    width: 20%;
+  }
 }
 .chair_item {
   position: relative;
@@ -523,57 +531,35 @@ p {
 }
 .contacts {
   margin-top: 40px;
-}
-.contacts h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.contacts hr {
-  width: 98%;
-  height: 3px;
-  background: #F1F5F8;
-  outline: none;
-  border: none;
+  margin-bottom: 4rem;
 }
 .contacts-info {
-  margin-bottom: 40px;
+  align-items: center;
+}
+.contacts-info h3 {
+  text-align: center;
+}
+.contacts-info hr {
+  margin: 1rem 0;
+  height: 0.2rem;
+}
+.contacts-info__text {
+  margin: 10px 0 20px 0;
+  height: 100%;
 }
 .contacts-info__text h4 {
   text-align: center;
-  font-size: 1.7rem;
-  margin-bottom: 15px 0 10px 0;
 }
 .contacts-info__text p {
-  width: 100%;
-  font-size: 1.3rem;
-  margin: 10px 0;
-}
-.contacts-info__img {
-  min-height: 200px;
-  background: url(../../images/contacts.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.contacts-address {
-  align-items: center;
-}
-.contacts-address h3 {
-  text-align: center;
-}
-.contacts-address__text {
-  margin: 10px 0 20px 0;
-}
-.contacts-address__text p {
   font-size: 1.3rem;
 }
-.contacts-address__text p b {
+.contacts-info__text p b {
   margin-right: 7px;
 }
-.contacts-address__map {
+.contacts-info__map {
   width: 100%;
   height: 180px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 600px) {
   .contacts-info {
@@ -594,8 +580,13 @@ p {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-auto-rows: content;
+    grid-row-gap: 3rem;
   }
   .contacts-address h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contacts-address hr {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -606,6 +597,7 @@ p {
     grid-column-start: 2;
     height: 350px;
     width: 100%;
+    border-bottom: none;
   }
 }
 .gallery {
@@ -986,10 +978,6 @@ p {
   /* DESCRIPTION */
   .description__box {
     flex-wrap: wrap;
-  }
-  .description__element {
-    width: 20%;
-    margin-bottom: 2rem;
   }
   .description__element--hold {
     width: 30%;
