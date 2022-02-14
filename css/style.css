@@ -52,7 +52,7 @@ p {
 }
 .header__photo {
   height: 7rem;
-  transition: transform 0.2s linear;
+  transition: transform .2s linear;
 }
 .header__photo:hover {
   transform: scale(1.05);
@@ -64,7 +64,13 @@ p {
   transition: text-shadow 0.2s linear;
 }
 .header__link:hover {
-  text-shadow: 0 0 0.5px #333, 0 0 0.5px #333, 0 0 0.5px #333;
+  text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
+}
+.header__link.active {
+  text-shadow: 0 0 .5px #333, 0 0 .5px #333, 0 0 .5px #333;
+}
+#small-logo {
+  display: none;
 }
 .header__nav {
   display: flex;
@@ -82,7 +88,7 @@ p {
   background-color: #fff;
   height: 100vh;
   transform: translateX(100%);
-  transition: transform 0.5s linear;
+  transition: transform .5s linear;
   overflow: auto;
 }
 .nav-burger.active {
@@ -124,7 +130,7 @@ p {
   font-size: 0;
   position: relative;
   background-color: #333;
-  transition: background 0.2s linear;
+  transition: background .2s linear;
 }
 .nav-toggle__item::before,
 .nav-toggle__item:after {
@@ -136,7 +142,7 @@ p {
   top: -12px;
   right: 0px;
   z-index: 1;
-  transition: transform 0.2s linear;
+  transition: transform .2s linear;
 }
 .nav-toggle__item::before {
   top: 12px;
@@ -225,7 +231,7 @@ p {
   font-size: 1.6rem;
   color: #1C242C;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 .about__btn:hover,
 .about__btn.active {
@@ -332,7 +338,7 @@ p {
   margin-right: 5px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.2s;
+  transition: .2s;
   height: 42px;
 }
 .chair_color:hover {
@@ -437,8 +443,8 @@ p {
   color: #AE7B3C;
 }
 .footer {
-  background: #282B22;
-  color: #FFFFFF;
+  background: #282b22;
+  color: #ffffff;
 }
 .footer__inner {
   padding: 20px 0;
@@ -476,7 +482,7 @@ p {
 .footer__social-link:hover,
 .footer__contacts-link:hover,
 .footer__address-link:hover {
-  color: #D39C55;
+  color: #d39c55;
 }
 .footer__nav-el {
   margin: 5px 0;
@@ -492,33 +498,33 @@ p {
 .footer__social-link-icon {
   width: 40px;
   height: 40px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 .footer__social-link-icon path {
-  stroke: #FFFFFF;
+  stroke: #ffffff;
 }
 .footer__social-link-icon polyline {
-  stroke: #FFFFFF;
+  stroke: #ffffff;
 }
 .footer__social-link-icon:hover {
-  fill: #D39C55;
+  fill: #d39c55;
 }
 .footer__social-link-icon:hover path {
-  stroke: #D39C55;
+  stroke: #d39c55;
 }
 .footer__social-link-icon:hover polyline {
-  stroke: #D39C55;
+  stroke: #d39c55;
 }
 .footer__contacts-phone {
   display: block;
   margin: 10px 0;
   padding: 5px 10px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 .footer__contacts-phone:hover {
-  color: #D39C55;
+  color: #d39c55;
 }
 .footer__address p {
   padding: 5px 10px;
@@ -667,7 +673,7 @@ p {
 }
 .questions__summary {
   margin-bottom: 1rem;
-  transition: color 0.2s linear;
+  transition: color .2s linear;
 }
 .questions__summary:hover {
   color: #AE7B3C;
@@ -679,8 +685,8 @@ p {
 }
 .feedback {
   padding: 2.5rem 0;
-  background: #3D4A39;
-  color: #FFFFFF;
+  background: #3d4a39;
+  color: #ffffff;
   height: fit-content;
 }
 .feedback__form {
@@ -713,11 +719,11 @@ p {
   outline: none;
   border: none;
   border-bottom: 0.15rem solid;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
 }
 .feedback-input:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.8rem;
   background-color: #fff;
   border-color: #bdbdbd;
@@ -731,7 +737,7 @@ p {
   padding-right: 2.25rem;
 }
 .feedback-input:valid {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
 .feedback-input:invalid:focus {
   border-color: #dc3545;
@@ -742,10 +748,10 @@ p {
   box-shadow: 0 1 0 0.3rem #198754;
 }
 .feedback-btn {
-  background: #AE7B3C;
+  background: #ae7b3c;
   outline: none;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.8rem;
   padding: 10rem;
   border-radius: 0.15rem;
@@ -929,7 +935,7 @@ p {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
-  transition: transform 0.2s linear;
+  transition: transform .2s linear;
 }
 .slick-arrow:hover {
   transform: scale(1.05);
@@ -948,17 +954,17 @@ p {
   background: none;
   border-radius: 50%;
   font-size: 1.1rem;
-  padding: 0.8rem 1.1rem;
+  padding: .8rem 1.1rem;
   color: #fff;
   cursor: pointer;
   border-color: #fff;
-  transition: transform 0.2s linear;
+  transition: transform .2s linear;
 }
 .slick-dots button:hover {
   transform: scale(1.05);
 }
 .slick-center {
-  transition: transform 0.2s linear;
+  transition: transform .2s linear;
   transform: scale(1.2);
   filter: none;
   box-shadow: 0 0 10px #333;
@@ -1171,6 +1177,13 @@ p {
   }
 }
 @media (max-width: 576px) {
+  /* HEADER */
+  #big-logo {
+    display: none;
+  }
+  #small-logo {
+    display: block;
+  }
   /* INTRO */
   .intro__inner {
     top: 50%;
