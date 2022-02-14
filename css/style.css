@@ -907,6 +907,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.modal-content details div img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.details-img {
+  padding: 0;
+  width: 100%;
+}
+.details-img div {
+  width: 100%;
+  padding: 0;
+}
 .modal-visible {
   display: none;
 }
