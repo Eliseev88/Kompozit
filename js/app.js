@@ -182,6 +182,7 @@ $("#calc_btn").on("click", function (event) {
         if (validateValues(a, b, c)) {
             countDoubleRoof(a, b, c).forEach(el => arr.push(el))
         } else return;
+
     } else if (roofType === 'single') {
         let a = +$('#single_a').val();
         let b = +$('#single_b').val();
@@ -192,6 +193,7 @@ $("#calc_btn").on("click", function (event) {
         if (validateValues(a, b, h, d1, d2)) {
             countSingleRoof(a, b, h, d1, d2).forEach(el => arr.push(el))
         } else return;
+
     } else if (roofType === 'tent') {
         let a = +$('#tent_a').val();
         let b = +$('#tent_b').val();
@@ -200,7 +202,19 @@ $("#calc_btn").on("click", function (event) {
         let d2 = +$('#tent_d2').val();
 
         if (validateValues(a, b, h, d1, d2)) {
-            countSingleRoof(a, b, h, d1, d2).forEach(el => arr.push(el))
+            countTentRoof(a, b, h, d1, d2).forEach(el => arr.push(el))
+        } else return;
+
+    } else if (roofType === 'hip') {
+        let a = +$('#hip_a').val();
+        let b = +$('#hip_b').val();
+        let c = +$('#hip_c').val();
+        let h = +$('#hip_h').val();
+        let d1 = +$('#hip_d1').val();
+        let d2 = +$('#hip_d2').val();
+
+        if (validateValues(a, b, c, h, d1, d2)) {
+            countHipRoof(a, b, c, h, d1, d2).forEach(el => arr.push(el))
         } else return;
     }
 
@@ -215,6 +229,7 @@ $("#calc_btn").on("click", function (event) {
 
 });
 
+// Ф-ция валидации входных данных
 function validateValues(...args) {
     if (args.includes(0, 0) || args.includes(NaN, 0)) {
         $('.calc__error').text('Неправильное значение длины');
@@ -224,13 +239,14 @@ function validateValues(...args) {
     return true;
 }
 
+// Двухскатная
 function countDoubleRoof(a, b, c) {
     let roofSquare = ((a + b) * c).toFixed(2);
-    let kpAmount = Math.ceil(roofSquare / 2) + 1;
+    let kpAmount = Math.ceil(roofSquare / 2);
     let screwAmount = kpAmount * 34;
-    let skatePlank = Math.round(Math.round(c) / 2) + 1;
-    let cornicePlank = (skatePlank - 1) * 2 + 1;
-    let windPlank = Math.round((a + b) / 2) * 2 + 1;
+    let skatePlank = Math.ceil(Math.round(c) / 2);
+    let cornicePlank = skatePlank * 2;
+    let windPlank = Math.ceil((a + b) / 2) * 2;
 
     if (roofSquare <= 1) {
         kpAmount = 1;
@@ -241,7 +257,7 @@ function countDoubleRoof(a, b, c) {
     }
     return [roofSquare, kpAmount, screwAmount, skatePlank, cornicePlank, windPlank];
 }
-
+// Односкатная
 function countSingleRoof(a, b, h, d1, d2) {
     let width = Math.sqrt(Math.pow(a, 2) + Math.pow(h, 2)).toFixed(2);
     width = +width + +d2 + +d2;
@@ -251,13 +267,74 @@ function countSingleRoof(a, b, h, d1, d2) {
     let kpAmount = Math.ceil(roofSquare / 2) + 1;
     let screwAmount = kpAmount * 34;
     let skatePlank = 0;
-    let cornicePlank = Math.round(long * 2) + 1;
-    let windPlank = Math.round(width * 2) + 1;
+    let cornicePlank = Math.ceil(long * 2);
+    let windPlank = Math.ceil(width * 2);
 
     return [roofSquare, kpAmount, screwAmount, skatePlank, cornicePlank, windPlank];
 
 }
-
+// Шатерная
 function countTentRoof(a, b, h, d1, d2) {
-    
+    let height1 = d1 + Math.sqrt(Math.pow(h, 2) + Math.pow((a / 2), 2));
+    let height2 = d2 + Math.sqrt(Math.pow(h, 2) + Math.pow((b / 2), 2));
+
+    let a1 = b * height1 / (height1 - d1);
+    let a2 = a * height2 / (height2 - d2);
+
+    let roofSquare = (height1 * a1 + height2 * a2).toFixed(2);
+    let kpAmount = Math.ceil(roofSquare / 2);
+    let screwAmount = kpAmount * 34;
+    let skatePlank = Math.ceil((height1 + height1 + height2 + height2) / 2);
+    let cornicePlank = Math.ceil((a + a + b + b + d1 + d1 + d2 + d2 + d1 + d1 + d2 + d2) / 2);
+    let windPlank = 0;
+
+    return [roofSquare, kpAmount, screwAmount, skatePlank, cornicePlank, windPlank];
 }
+// Вальмовая
+function countHipRoof(a, b, c, h, d1, d2) {
+    let heightTrap = Math.sqrt(Math.pow(h, 2) + Math.pow((a / 2), 2)) + d2;
+    let heightTri = Math.sqrt(Math.pow(h, 2) + Math.pow(c, 2)) + d1;
+
+    let cSmall = a * ((Math.sqrt(Math.pow(h, 2) + Math.pow(c, 2)) + d1) / Math.sqrt(Math.pow(h, 2) + Math.pow(c, 2)))
+
+    let triSquare = 0.5 * heightTri * cSmall;
+    let triSide = Math.sqrt(Math.pow(heightTri, 2) + (Math.pow(cSmall, 2) / 4));
+
+    let trapSquare = (Math.sqrt(Math.pow(h, 2) + Math.pow((a / 2), 2)) + d2) * ((b - 2 * c) + Math.sqrt(Math.pow(triSide, 2) - Math.pow(heightTrap, 2)));
+
+    let roofSquare = (2 * (triSquare + trapSquare)).toFixed(2);
+    let kpAmount = Math.ceil(roofSquare / 2);
+    let screwAmount = kpAmount * 34;
+    let skatePlank = Math.ceil((b - c - c) / 2);
+    let cornicePlank = Math.ceil((a + a + b + b + d1 + d1 + d2 + d2 + d1 + d1 + d2 + d2) / 2);
+    let windPlank = 0;
+
+    return [roofSquare, kpAmount, screwAmount, skatePlank, cornicePlank, windPlank];
+    //    let baseTrap = b + d1 + d1;
+    //    let skat = b - c - c;
+    //    let baseTri = a + d2 + d2;
+    //    
+    //    let triSide = Math.sqrt(Math.pow(baseTri, 2) + Math.pow(h, 2))
+    //    
+    //    if (skat > 0) {
+    //        let heightTrap = Math.sqrt(Math.pow(triSide, 2) - (Math.pow((baseTrap - skat), 2) / 4 ));
+    //        let heightTri = Math.sqrt(Math.pow(triSide, 2) - (Math.pow(baseTri, 2) / 4));
+    //        
+    //        let squareTri = 0.5 * baseTri * heightTri;
+    //        
+    //        let squareTrap = ((skat + baseTrap) / 2) * heightTrap;
+    //        
+    //        let roofSquare = 2 * (squareTri + squareTrap);
+    //            console.log(roofSquare.toFixed(2))
+    //    }
+
+}
+
+
+///* Slider open BIG image */
+//$('.slick-center').on('click', function (event) {
+//    event.preventDefault();
+//    $(this).toggleClass('transform');
+//    
+//    
+//});
