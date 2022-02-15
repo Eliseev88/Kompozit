@@ -19,15 +19,17 @@
   }
 
   &__text {
-    margin: 10px 0 20px 0;
+    margin: 1rem 0 2rem 0;
     height: 100%;
 
     h4 {
       text-align: center;
+      margin-bottom: 1.5rem;
     }
 
     & p {
       font-size: 1.3rem;
+
       & b {
         margin-right: 7px;
       }
@@ -43,26 +45,13 @@
 
 @media screen and (min-width: 600px) {
   .contacts-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-
-    &__img {
-      min-height: 300px;
-      width: 50%;
-      background: url(~/../../../images/contacts.jpg);
-      background-position: 70%;
-      background-size: cover;
-    }
-  }
-
-  .contacts-address {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-auto-rows: content;
     grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
 
     & h3 {
       grid-column-start: 1;
