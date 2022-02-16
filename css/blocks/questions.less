@@ -28,11 +28,29 @@
     cursor: pointer;
     font-size: 2rem;
 
+    &:focus {
+        outline: none;
+    }
+
+    & summary {
+        &:focus {
+            outline: none;
+        }
+    }
+
     &[open] {
         margin-bottom: 2rem;
 
+        &:focus {
+            outline: none;
+        }
+
         & summary {
             color: #AE7B3C;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

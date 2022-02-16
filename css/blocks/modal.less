@@ -20,6 +20,11 @@
     padding: 1rem;
     margin: 2rem auto;
     background-color: #ffffff;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    &--gallery {
+        width: 80%;
+    }
 }
 
 .modal-close {
@@ -69,12 +74,20 @@
 
         &[open] summary {
             color: #D39C55;
+
+            &:focus {
+                outline: none;
+            }
         }
 
         & summary {
             padding: 1rem;
             font-size: 2rem;
             font-weight: 700;
+
+            &:focus {
+                outline: none;
+            }
         }
 
         & div {

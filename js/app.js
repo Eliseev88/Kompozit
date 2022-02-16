@@ -331,10 +331,16 @@ function countHipRoof(a, b, c, h, d1, d2) {
 }
 
 
-///* Slider open BIG image */
-//$('.slick-center').on('click', function (event) {
-//    event.preventDefault();
-//    $(this).toggleClass('transform');
-//    
-//    
-//});
+/* Slider open BIG image */
+$('.gallery__image').on('click', function (event) {
+    event.preventDefault();
+    let $this = $(this);
+
+    if ($this.hasClass('slick-center')) {
+        let $img = $this.attr('src');
+        $("#gallery-modal").toggleClass("modal-visible");
+        $('body').css('overflow', 'hidden');
+        $('#gallery-modal-content').html('<img src="' + $img + '" alt="photo" width="100%" />')
+        
+    }
+});
