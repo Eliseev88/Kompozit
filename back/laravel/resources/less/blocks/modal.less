@@ -51,7 +51,7 @@
     height: max-content;
     overflow: hidden auto;
 
-    & details {
+    & .details {
         margin-bottom: 1rem;
         font-size: 1.7rem;
 
@@ -60,10 +60,6 @@
 
             & summary {
                 color: #D39C55;
-            }
-
-            & div {
-                cursor: context-menu;
             }
         }
 
@@ -76,33 +72,64 @@
             font-size: 2rem;
             font-weight: 700;
         }
+    }
+}
 
-        & div {
-            text-align: justify;
-            padding: 0.5rem 2rem;
+.details-description {
+    cursor: context-menu;
+    text-align: justify;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.details-img {
+    padding: 0;
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    & div {
+        width: 100%;
+        padding: 0;
+        border-bottom: 2px solid #ccc;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+
+        & img {
             width: 100%;
-            margin: 0 auto;
+            margin: 1rem auto;
+        }
+    }
+}
 
-            img {
+.modal-visible {
+    display: none;
+}
+
+
+@media screen and (min-width: 769px) {
+    .details-img {
+        & div {
+            width: 100%;
+
+
+            & img {
                 display: block;
                 width: 50%;
-                height: auto;
                 margin: 0 auto;
             }
         }
     }
 }
 
-.details-img {
-    padding: 0;
-    width: 100%;
-
-    & div {
-        width: 100%;
+@media screen and (min-width: 560px) {
+    .modal {
         padding: 0;
     }
-}
-
-.modal-visible {
-    display: none;
 }
