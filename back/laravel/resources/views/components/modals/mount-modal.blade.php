@@ -1,4 +1,4 @@
-<div class="modals  modal-visible modal-mount">
+<div class="modals modal-visible modal-mount">
     <div class="container">
         <div class="modal">
             <div class="modal-close">

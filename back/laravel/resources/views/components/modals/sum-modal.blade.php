@@ -1,4 +1,4 @@
-<div class="modals modal-sum">
+<div class="modals modal-visible modal-sum">
     <div class="container">
         <div class="modal">
             <div class="modal-close">
