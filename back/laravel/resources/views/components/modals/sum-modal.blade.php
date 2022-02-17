@@ -10,29 +10,39 @@
             </div>
             <div class="modal-content">
                 @foreach($content as $key => $item)
-                <details open>
+                <details class="details">
                     <summary>{{$item['title']}}</summary>
-                    <div>
+                    <div class="details-description">
+
                         @foreach($item['text'] as $key => $text)
                         <p>{{$text}}</p>
                         @endforeach
 
                         @isset($item['img'])
 
-                        @foreach($item['img'] as $key => $data)
                         <div class="details-img">
-                            <img src={{ $data['src'] }} alt={{ $data['alt'] }}>
-                            @isset($data['title'])
-                            <p><b>{{ $data['title'] }}</b></p>
-                            @endisset
-                            @isset($data['description'])
-                            <p>{{ $data['description'] }}</p>
-                            @endisset
+
+                            @foreach($item['img'] as $key => $data)
+
+                            <div>
+
+                                <img src={{ $data['src'] }} alt={{ $data['alt'] }}>
+
+                                @isset($data['title'])
+                                <p><b>{{ $data['title'] }}</b></p>
+                                @endisset
+                                @isset($data['description'])
+                                <p>{{ $data['description'] }}</p>
+                                @endisset
+                            </div>
+                            @endforeach
+
                         </div>
-                        @endforeach
                         @endisset
                     </div>
                 </details>
+
+
                 @endforeach
             </div>
         </div>

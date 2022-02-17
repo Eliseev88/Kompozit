@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.intro {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.intro__inner {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate3d(-50%, -60%, 0);
+    z-index: 2;
+}
+
+.intro__title {
+    margin-bottom: 4rem;
+    font-size: 7rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.intro__text {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.intro__btn {
+    margin-top: 5rem;
+    padding: 2.2rem 5rem;
+    background-color: #AE7B3C;
+    border: none;
+    font-family: inherit;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: box-shadow .2s linear, transform .2s linear;
+
+    &:hover {
+        box-shadow: 0 0 6px #AE7B3C;
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+
+    &--link {
+        margin-top: 0;
+        text-decoration: none;
+    }
+    
+    &--calc {
+        margin-top: 0;
+        //padding: 1rem 3.5rem;
+    }
+
+}

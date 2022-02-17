@@ -1,0 +1,34 @@
+.nav-burger {
+  display: none;
+  position: fixed;
+  top: 89px;
+  right: -1px;
+  z-index: 1000;
+  width: 35%;
+  background-color: #fff;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform .5s linear;
+  overflow: auto;
+}
+.nav-burger.active {
+  transform: translateX(0);
+}
+.nav-burger__nav {
+  margin-top: 5rem;
+}
+.nav-burger__nav ul {
+  list-style: none;
+  padding: 0;
+}
+.nav-burger__nav li {
+  margin-bottom: 5rem;
+}
+.nav-burger__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 2rem;
+}
+.nav-burger__link:hover {
+  text-decoration: underline;
+}

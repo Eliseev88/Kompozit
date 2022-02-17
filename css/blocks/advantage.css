@@ -1,0 +1,48 @@
+.advantage {
+  margin-bottom: 10rem;
+  font-family: 'Raleway', sans-serif;
+}
+.advantage__header {
+  margin-bottom: 8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.advantage__inner {
+  border-top: 1px solid rgba(40, 43, 34, 0.2);
+}
+.advantage__row {
+  display: flex;
+  margin-top: 5rem;
+  border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+}
+.advantage__col {
+  width: 50%;
+  position: relative;
+}
+.advantage__col--text {
+  padding: 2px 5rem 5rem;
+  border-left: 1px solid rgba(40, 43, 34, 0.2);
+}
+.advantage__title {
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.advantage__text {
+  font-size: 1.6rem;
+  color: rgba(40, 43, 34, 0.8);
+}
+.advantage__number {
+  color: rgba(40, 43, 34, 0.3);
+  font-size: 2.4rem;
+}
+.advantage__icon {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -60%, 0);
+  font-size: 9rem;
+  color: #AE7B3C;
+}

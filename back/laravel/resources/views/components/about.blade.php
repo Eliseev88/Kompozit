@@ -173,7 +173,7 @@
                     </div>
                     <div class="description__content">
                         <h3 class="description__title">Схема укладки листов КОМПОЗИТПЛАСТ по горизонтали</h3>
-                        <div class="description__text descriprion__text--hold">
+                        <div class="description__text description__text--other">
                             <p class="description__paragraph--mount">Чередуем нахлёст верх-низ для листов (рядов) по
                                 горизонтали путем одинакового наложения крайней широкой 8 см. волны листа слева и справа
                                 листа только поверх (либо только под низ) такой же смежной с ним волны следующего листа
@@ -191,7 +191,7 @@
                     </div>
                     <div class="description__content">
                         <h3 class="description__title">Подсчёт количества листов кровли КОМПОЗИТПЛАСТ</h3>
-                        <div class="description__text descriprion__text--hold">
+                        <div class="description__text description__text--other">
                             <p class="description__paragraph--mount">Данный блок информации поможет вам подсчитать
                                 минимально необходимое количество листов для кровли.
                                 Переходите в раздел нажав кнопку "Подробнее".

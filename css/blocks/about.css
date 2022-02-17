@@ -1,0 +1,29 @@
+.about {
+  margin-bottom: 10rem;
+}
+.about__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 7rem;
+}
+.about__btn {
+  display: block;
+  padding: 1.5rem 7.5rem;
+  margin-left: 1.5rem;
+  background-color: #F1F5F8CC;
+  border: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #1C242C;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.about__btn:hover,
+.about__btn.active {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), radial-gradient(138.93% 500.94% at 0% -22.97%, rgba(1, 48, 94, 0.1) 0%, rgba(184, 136, 75, 0.1) 86.98%);
+  backdrop-filter: blur(30px);
+  color: #AE7B3C;
+}
+.about__btn:first-child {
+  margin-left: 0;
+}

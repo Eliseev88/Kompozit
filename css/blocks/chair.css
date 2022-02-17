@@ -1,0 +1,35 @@
+.chair_item {
+  position: relative;
+}
+.chair_images {
+  position: relative;
+  width: 100%;
+}
+.chair_radio {
+  display: none;
+}
+.chair__buttons {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+.chair_button {
+  margin-bottom: 2rem;
+}
+.chair_button img {
+  margin-right: 1rem;
+}
+.chair_color {
+  display: block;
+  margin-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  height: 42px;
+}
+.chair_color:hover {
+  transform: scale(1.05);
+}
+.chair_color:active {
+  transform: scale(0.9);
+}

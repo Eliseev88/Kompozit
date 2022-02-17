@@ -10,12 +10,12 @@
             </div>
             <div class="modal-content">
                 @foreach($content as $key => $item)
-                    <details>
-                        <summary>{{$item['title']}}</summary>
-                        <div>
-                            {{$item['text']}}
-                        </div>
-                    </details>
+                <details class="details">
+                    <summary>{{$item['title']}}</summary>
+                    <div class="details-description">
+                        {{$item['text']}}
+                    </div>
+                </details>
                 @endforeach
             </div>
         </div>
