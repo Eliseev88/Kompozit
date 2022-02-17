@@ -10,6 +10,16 @@
     position: fixed;
     top: 0;
     left: 0;
+
+    &--feedback {
+        max-width: 410px;
+        width: 100%;
+        height: auto;;
+        background: none;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .modal {
@@ -24,6 +34,10 @@
 
     &--gallery {
         width: 70%;
+    }
+
+    &--feedback {
+        align-items: center;
     }
 }
 
@@ -55,6 +69,10 @@
     display: block;
     height: max-content;
     overflow: hidden auto;
+
+    &--feedback {
+        text-align: center;
+    }
 
     & .details {
         margin-bottom: 1rem;
@@ -125,6 +143,13 @@
     display: none;
 }
 
+.modal-title--feedback {
+    margin-bottom: 3rem;
+}
+
+.modal-title--feedback-small {
+    margin-bottom: 5rem;
+}
 
 @media screen and (min-width: 769px) {
     .details-img {

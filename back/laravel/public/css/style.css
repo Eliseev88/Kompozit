@@ -28,6 +28,23 @@ p {
 *:after {
   box-sizing: border-box;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 /* BLOCKS */
 .container {
   width: 100%;
@@ -943,6 +960,15 @@ p {
   top: 0;
   left: 0;
 }
+.modals--feedback {
+  max-width: 410px;
+  width: 100%;
+  height: auto;
+  background: none;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .modal {
   display: flex;
   flex-direction: column;
@@ -956,6 +982,9 @@ p {
 }
 .modal--gallery {
   width: 70%;
+}
+.modal--feedback {
+  align-items: center;
 }
 .modal-close {
   width: 100%;
@@ -983,6 +1012,9 @@ p {
   height: -moz-max-content;
   height: max-content;
   overflow: hidden auto;
+}
+.modal-content--feedback {
+  text-align: center;
 }
 .modal-content .details {
   margin-bottom: 1rem;
@@ -1036,6 +1068,12 @@ p {
 }
 .modal-visible {
   display: none;
+}
+.modal-title--feedback {
+  margin-bottom: 3rem;
+}
+.modal-title--feedback-small {
+  margin-bottom: 5rem;
 }
 @media screen and (min-width: 769px) {
   .details-img div {
