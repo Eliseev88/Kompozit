@@ -1,0 +1,38 @@
+// main: ../style.less
+
+/* Switcher */
+
+.switcher_slide {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50%;
+}
+
+.switcher_slide img {
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+.switcher {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    //width: 50%;
+}
+
+/* Делаем слайдер на чистом CSS */
+
+#img_1:checked ~ div #first,
+#img_2:checked ~ div #second,
+#img_3:checked ~ div #third,
+#img_4:checked ~ div #fourth,
+#img_5:checked ~ div #fifth,
+    {
+    visibility: visible;
+    opacity: 1;
+}
