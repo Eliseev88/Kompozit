@@ -11,4 +11,7 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.less("resources/less/style.less", "public/css");
+mix.js("resources/js/app.js", "public/js").less(
+    "resources/less/style.less",
+    "public/css"
+);
