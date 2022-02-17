@@ -966,49 +966,67 @@ p {
   height: max-content;
   overflow: hidden auto;
 }
-.modal-content details {
+.modal-content .details {
   margin-bottom: 1rem;
   font-size: 1.7rem;
 }
-.modal-content details:hover {
+.modal-content .details:hover {
   cursor: pointer;
 }
-.modal-content details:hover summary {
+.modal-content .details:hover summary {
   color: #D39C55;
 }
-.modal-content details:hover div {
-  cursor: context-menu;
-}
-.modal-content details[open] summary {
+.modal-content .details[open] summary {
   color: #D39C55;
 }
-.modal-content details summary {
+.modal-content .details summary {
   padding: 1rem;
   font-size: 2rem;
   font-weight: 700;
 }
-.modal-content details div {
+.details-description {
+  cursor: context-menu;
   text-align: justify;
   padding: 0.5rem 2rem;
   width: 100%;
   margin: 0 auto;
 }
-.modal-content details div img {
-  display: block;
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
 .details-img {
   padding: 0;
+  display: block;
   width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 .details-img div {
   width: 100%;
   padding: 0;
+  border-bottom: 2px solid #ccc;
+}
+.details-img div:last-child {
+  border-bottom: none;
+}
+.details-img div img {
+  width: 100%;
+  margin: 1rem auto;
 }
 .modal-visible {
   display: none;
+}
+@media screen and (min-width: 769px) {
+  .details-img div {
+    width: 100%;
+  }
+  .details-img div img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 560px) {
+  .modal {
+    padding: 0;
+  }
 }
 /* HELPERS */
 .pos-rel {
