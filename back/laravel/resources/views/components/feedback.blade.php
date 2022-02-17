@@ -11,7 +11,7 @@
                 <button class="feedback-btn" type="submit">Отправить</button>
 
                 <div class="feedback-label">
-                    <input type="checkbox" class="custom-checkbox" id="personalData" name="personalData" value="yes">
+                    <input type="checkbox" class="custom-checkbox" id="personalData" name="personalData" value="yes" required>
                     <label for="personalData">Согласие на обработку персональных данных</label>
                 </div>
 

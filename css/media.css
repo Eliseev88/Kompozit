@@ -170,6 +170,15 @@
   .gallery__image {
     filter: none;
   }
+  .gallery__arrow {
+    bottom: 2.5rem;
+  }
+  .gallery__arrow--left {
+    right: 20%;
+  }
+  .gallery__arrow--right {
+    left: 20%;
+  }
 }
 @media (max-width: 670px) {
   /* ABOUT */
@@ -271,12 +280,6 @@
   .gallery__header {
     margin-bottom: 0;
     font-size: 4rem;
-  }
-  .gallery__arrow--left {
-    right: 30%;
-  }
-  .gallery__arrow--right {
-    left: 30%;
   }
 }
 @media (max-width: 502px) {

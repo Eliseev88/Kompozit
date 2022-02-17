@@ -1,5 +1,5 @@
 <section class="advantage" id="advantage">
-        <h2 class="advantage__header">преимущество Композитпласт</h2>
+        <h2 class="advantage__header">преимущества Композитпласт</h2>
         <div class="container">
             <div class="advantage__inner">
                 <div class="advantage__row">

@@ -341,6 +341,6 @@ $('.gallery__image').on('click', function (event) {
         $("#gallery-modal").toggleClass("modal-visible");
         $('body').css('overflow', 'hidden');
         $('#gallery-modal-content').html('<img src="' + $img + '" alt="photo" width="100%" />')
-        
+
     }
 });

@@ -1,7 +1,7 @@
-<div class="contacts">
+<div class="contacts" id="contacts">
         <div class="container">
             <div class="contacts-info">
-                <h3>Как с нами связаться</h3>
+                <h3 class="gallery__header">Контакты</h3>
 
                 <div class="contacts-info__text">
                     <h4>Офис</h4>

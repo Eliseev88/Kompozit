@@ -365,14 +365,6 @@ function countHipRoof(a, b, c, h, d1, d2) {
     //    }
 }
 
-///* Slider open BIG image */
-//$('.slick-center').on('click', function (event) {
-//    event.preventDefault();
-//    $(this).toggleClass('transform');
-//
-//
-//});
-
 //Modals
 $("#modal-appearance").on("click", function () {
     $(".modal-appearance").removeClass("modal-visible");
@@ -392,4 +384,18 @@ $("#modal-sum").on("click", function () {
 $(".close").on("click", function () {
     $(".modals").addClass("modal-visible");
     $("body").css("overflow", "");
+});
+
+/* Slider open BIG image */
+$('.gallery__image').on('click', function (event) {
+    event.preventDefault();
+    let $this = $(this);
+
+    if ($this.hasClass('slick-center')) {
+        let $img = $this.attr('src');
+        $("#gallery-modal").toggleClass("modal-visible");
+        $('body').css('overflow', 'hidden');
+        $('#gallery-modal-content').html('<img src="' + $img + '" alt="photo" width="100%" />')
+
+    }
 });

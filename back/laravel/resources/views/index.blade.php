@@ -11,6 +11,7 @@
 <x-contacts />
 <x-feedback />
 <x-footer />
+<x-modals.gallery-modal />
 <x-modals.appearance-modal />
 <x-modals.mount-modal />
 <x-modals.sum-modal />

@@ -1,6 +1,3 @@
-.gallery {
-  margin-bottom: 10rem;
-}
 .gallery__header {
   margin-bottom: 4rem;
   text-align: center;
@@ -26,11 +23,15 @@
   filter: brightness(0.2);
   cursor: pointer;
 }
+.gallery__arrows {
+  height: 10rem;
+}
 .gallery__arrow {
   color: #333 !important;
   position: absolute;
-  bottom: 12rem;
-  z-index: 999;
+  bottom: 21rem;
+  z-index: 2;
+  font-size: 2rem;
 }
 .gallery__arrow--left {
   right: 0;

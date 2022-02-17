@@ -1,6 +1,6 @@
-<div class="modals modal-visible modal-appearance">
+<div class="modals modal-visible" id="gallery-modal">
     <div class="container">
-        <div class="modal">
+        <div class="modal modal--gallery">
             <div class="modal-close">
                 <button id="btn" class="close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -8,16 +8,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="modal-content">
-                @foreach($content as $key => $item)
-                    <details>
-                        <summary>{{$item['title']}}</summary>
-                        <div>
-                            {{$item['text']}}
-                        </div>
-                    </details>
-                @endforeach
-            </div>
+            <div class="modal-content" id="gallery-modal-content"></div>
         </div>
     </div>
 </div>
