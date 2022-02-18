@@ -26,7 +26,7 @@
                 <div class="footer__social">
                     <h4>Социальные сети:</h4>
                     <div class="footer__social-list">
-                        <a href="https://instagram.com/lompozit.plast" target="_blank" class="footer__social-link">
+                        <a href="https://instagram.com/kompozit.plast" target="_blank" class="footer__social-link">
                             <!-- Instagramm -->
                             <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 50 50" width="100px" height="100px">
