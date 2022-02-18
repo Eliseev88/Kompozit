@@ -25,8 +25,7 @@
             <!-- NAV-BURGER -->
             <div class="nav-burger" id="nav-burger">
                 <menu class="nav-burger__menu">
-                    <div class="nav-burger__nav">
-                        <ul>
+                        <ul class="nav-burger__nav">
                             <li><a href="#" class="nav-burger__link" data-scroll="#about">Описание</a></li>
                             <li><a href="#" class="nav-burger__link" data-scroll="#advantage">Преимущества</a></li>
                             <li><a href="#" class="nav-burger__link" data-scroll="#gallery">Галерея</a></li>
@@ -34,7 +33,6 @@
                             <li><a href="#" class="nav-burger__link" data-scroll="#questions">Вопросы</a></li>
                             <li><a href="#" class="nav-burger__link" data-scroll="#contacts">Контакты</a></li>
                         </ul>
-                    </div>
                 </menu>
             </div>
         </div> <!-- header__inner -->
