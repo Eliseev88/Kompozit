@@ -1,14 +1,13 @@
 <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <nav class="footer__nav" id="nav">
+                <nav class="footer__nav">
                     <h4>навигация по сайту</h4>
                     <div class="footer__nav-el">
                         <a class="footer__nav-link" href="#" data-scroll="#about">Описание</a>
                     </div>
                     <div class="footer__nav-el">
-                        <a class="footer__nav-link" href="#" data-scroll="#advantage"
-                            data-scroll="#advantage">Преимущества</a>
+                        <a class="footer__nav-link" href="#" data-scroll="#advantage">Преимущества</a>
                     </div>
                     <div class="footer__nav-el">
                         <a class="footer__nav-link" href="#" data-scroll="#gallery">Галерея</a>
@@ -27,7 +26,7 @@
                 <div class="footer__social">
                     <h4>Социальные сети:</h4>
                     <div class="footer__social-list">
-                        <a href="#" class="footer__social-link">
+                        <a href="https://instagram.com/lompozit.plast" target="_blank" class="footer__social-link">
                             <!-- Instagramm -->
                             <svg class="footer__social-link-icon " fill="#000000" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 50 50" width="100px" height="100px">
@@ -66,9 +65,9 @@
 
                 <div class="footer__contacts">
                     <h4>телефон</h4>
-                    <a class="footer__contacts-phone" href="tel:+7 (814) 33 22 11">+7(999)-99-99</a>
-                    <a class="footer__contacts-phone" href="tel:+7 (814) 33 22 11">+7(999)-99-99</a>
-                    <a class="footer__contacts-phone" href="tel:+7 (814) 33 22 11">+7(999)-99-99</a>
+                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(999)-99-99</a>
+                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(999)-99-99</a>
+                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(999)-99-99</a>
                 </div>
 
                 <div class="footer__address">

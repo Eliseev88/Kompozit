@@ -131,7 +131,7 @@ $("[data-scroll]").on("click", function (event) {
   var $this = $(this),
       blockId = $this.data("scroll"),
       blockOffset = $(blockId).offset().top - 110;
-  $("#nav a").removeClass("active");
+  $("#top-header-nav a").removeClass("active");
   $this.addClass("active");
   $("html, body").animate({
     scrollTop: blockOffset

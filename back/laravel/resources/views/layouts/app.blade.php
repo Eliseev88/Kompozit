@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -22,14 +22,12 @@
     <title>Славная кровля</title>
 
 </head>
-
+<body>
 @yield('content')
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
 
-<body>
 </body>
-
 </html>
