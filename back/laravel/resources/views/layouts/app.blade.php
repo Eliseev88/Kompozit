@@ -23,9 +23,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8d73d6a795.js" crossorigin="anonymous"></script>
     <title>Славная кровля</title>
-
 </head>
 <body>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(89271375, "init", {
+
+        clickmap:true,
+
+        trackLinks:true,
+
+        accurateTrackBounce:true,
+
+        webvisor:true
+
+    });
+
+    </script>
+
+    <noscript><div><img src="https://mc.yandex.ru/watch/89271375" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
 @yield('content')
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
