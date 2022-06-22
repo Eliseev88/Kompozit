@@ -65,9 +65,7 @@
 
                 <div class="footer__contacts">
                     <h4>телефон</h4>
-                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(999)-99-99</a>
-                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(999)-99-99</a>
-                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(999)-99-99</a>
+                    <a class="footer__contacts-phone" href="tel:+7814332211">+7(495)197-88-68</a>
                 </div>
 
                 <div class="footer__address">

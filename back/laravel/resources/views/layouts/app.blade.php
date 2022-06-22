@@ -29,28 +29,38 @@
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
 
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(89271375, "init", {
+        ym(89271375, "init", {
 
-        clickmap:true,
+            clickmap:true,
 
-        trackLinks:true,
+            trackLinks:true,
 
-        accurateTrackBounce:true,
+            accurateTrackBounce:true,
 
-        webvisor:true
+            webvisor:true
 
-    });
+        });
 
     </script>
 
     <noscript><div><img src="https://mc.yandex.ru/watch/89271375" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8B10SMQTE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K8B10SMQTE');
+    </script>
 
 @yield('content')
 

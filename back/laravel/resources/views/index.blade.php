@@ -17,7 +17,12 @@
 <x-modals.sum-modal />
 
 @if (session('success'))
-    <div class="modals modals--feedback">
+
+    <script>
+        document.body.style.overflow = 'hidden';
+    </script>
+
+    <div class="modals">
         <div class="container">
             <div class="modal modal--feedback">
                 <div class="modal-close">
