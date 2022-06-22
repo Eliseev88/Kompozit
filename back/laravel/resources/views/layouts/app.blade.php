@@ -15,6 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="images/120x120.png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
