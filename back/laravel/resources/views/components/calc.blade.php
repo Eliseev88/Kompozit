@@ -91,6 +91,12 @@
                         <div class="calc__res">
                             Карнизная планка (2м): <span id="res-cornice"></span>
                         </div>
+                        <div class="calc__price">
+                            Цена композитпласт: <span id="res-price"></span>
+                            <div class="calc__addition">
+                                <span>*Доборные элементы рассчитываются отдельно</span>
+                            </div>
+                        </div>
                     </div> <!-- /.calc__inner -->
                 </div> <!-- /.calc__col -->
             </div> <!-- /.calc__wrapper -->

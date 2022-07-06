@@ -225,6 +225,7 @@ $("#calc_btn").on("click", function (event) {
     $("#res-skate").text(arr[3] + "шт.");
     $("#res-cornice").text(arr[4] + "шт.");
     $("#res-wind").text(arr[5] + "шт.");
+    $('#res-price').text((arr[1] * 630) + 'руб.');
 
     $(".calc__inner").addClass("active");
 });
