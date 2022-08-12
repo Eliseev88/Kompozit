@@ -1,3 +1,4 @@
+<!-- CALC -->
 <div class="calc" id="calc">
         <div class="container">
             <h2 class="calc__header">Калькулятор</h2>
@@ -90,6 +91,9 @@
                         </div>
                         <div class="calc__res">
                             Карнизная планка (2м): <span id="res-cornice"></span>
+                        </div>
+                        <div class="calc__price calc__price--old">
+                            Старая цена: <span id="res-price-old"></span>
                         </div>
                         <div class="calc__price">
                             Цена композитпласт: <span id="res-price"></span>

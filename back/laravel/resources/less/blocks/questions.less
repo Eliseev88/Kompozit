@@ -69,3 +69,30 @@
     font-style: italic;
     cursor: context-menu;
 }
+
+.questions__certificate {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & a {
+        width: 30%;
+        display: block;
+        text-decoration: none;
+
+        & img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .questions__certificate {
+        flex-direction: column;
+
+        & a {
+            width: 100%;
+        }
+    }
+}

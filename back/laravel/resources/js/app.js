@@ -25,6 +25,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        fade: true,
         speed: 1000,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -219,13 +220,17 @@ $("#calc_btn").on("click", function (event) {
         } else return;
     }
 
+    const price = 558;
+    const oldPrice = 630;
+
     $("#res-square").html(arr[0] + "м<sup>2</sup>");
     $("#res-kp").text(arr[1] + "шт.");
     $("#res-screw").text(arr[2] + "шт.");
     $("#res-skate").text(arr[3] + "шт.");
     $("#res-cornice").text(arr[4] + "шт.");
     $("#res-wind").text(arr[5] + "шт.");
-    $('#res-price').text((arr[1] * 630) + 'руб.');
+    $('#res-price').text((arr[1] * price) + 'руб.');
+    $('#res-price-old').text((arr[1] * oldPrice) + 'руб.');
 
     $(".calc__inner").addClass("active");
 });
@@ -347,23 +352,6 @@ function countHipRoof(a, b, c, h, d1, d2) {
         cornicePlank,
         windPlank,
     ];
-    //    let baseTrap = b + d1 + d1;
-    //    let skat = b - c - c;
-    //    let baseTri = a + d2 + d2;
-    //
-    //    let triSide = Math.sqrt(Math.pow(baseTri, 2) + Math.pow(h, 2))
-    //
-    //    if (skat > 0) {
-    //        let heightTrap = Math.sqrt(Math.pow(triSide, 2) - (Math.pow((baseTrap - skat), 2) / 4 ));
-    //        let heightTri = Math.sqrt(Math.pow(triSide, 2) - (Math.pow(baseTri, 2) / 4));
-    //
-    //        let squareTri = 0.5 * baseTri * heightTri;
-    //
-    //        let squareTrap = ((skat + baseTrap) / 2) * heightTrap;
-    //
-    //        let roofSquare = 2 * (squareTri + squareTrap);
-    //            console.log(roofSquare.toFixed(2))
-    //    }
 }
 
 $("#modal-appearance").on("click", function () {

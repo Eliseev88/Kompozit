@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="chair_button">
                                         <label class="switcher" id="switcher1" for="img_1"><img class="chair_color"
-                                                src="images/terrakot.jpg" alt=""><span>Коричнево-красный</span></label>
+                                                src="images/terrakot.jpg" alt=""><span>Медно-коричневый</span></label>
                                     </div>
                                     <div class="chair_button  chair_button--third">
                                         <label class="switcher" id="switcher3" for="img_3"><img class="chair_color"
@@ -198,6 +198,7 @@
                                 Изучите дополнительные схемы с возможными вариантами по делению (распилу) кровельного
                                 листа нажав кнопку "Смотреть пример на схеме"
                                 или воспользуйтесь нашим <a href="#" data-scroll="#calc">калькулятором</a>.</p>
+                            <div class='description__price'>Цена за м2 - 558 руб.</div>
                             <button id="modal-sum" class="intro__btn intro__btn--link">Подробнее</button>
                         </div>
                     </div>
