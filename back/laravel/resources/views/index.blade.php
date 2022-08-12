@@ -15,6 +15,7 @@
 <x-modals.appearance-modal />
 <x-modals.mount-modal />
 <x-modals.sum-modal />
+<x-modals.discount />
 
 @if (session('success'))
 

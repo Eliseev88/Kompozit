@@ -1,0 +1,55 @@
+// main: ../style.less
+
+.discount {
+    position: fixed;
+    top: 33px;
+    right: -60px;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color:lawngreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 70px 20px 20px;
+}
+
+.discount__wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.discount__close {
+    position: absolute;
+    top: -43px;
+    right: 19px;
+    border: 0;
+    background-color: transparent;
+    font-size: 3rem;
+    cursor: pointer;
+    
+    &:focus {
+        outline: 0;
+    }
+}
+
+.discount__title,
+.discount__suptitle {
+    margin-bottom: 2rem;
+}
+
+.discount__old-price {
+    font-style: italic;
+    text-decoration: line-through;
+
+}
+
+.discount__price {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-style: italic;
+    font-weight: 700;
+    margin-left: 3rem;
+    color: crimson;
+}

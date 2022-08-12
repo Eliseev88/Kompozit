@@ -386,3 +386,14 @@ $('.gallery__image').on('click', function (event) {
         $('#gallery-modal-content').html('<img src="' + $img + '" alt="photo" width="100%" />')
     }
 });
+
+/* Discount logic */
+const discountInterval = setInterval(() => {
+    $('.discount__title').toggleClass('red');
+}, 600);
+
+$('#discount-close').on('click', event => {
+    $('#discount').removeClass('animate__bounceInRight');
+    $('#discount').addClass('animate__bounceOutRight');
+    clearInterval(discountInterval);
+});
